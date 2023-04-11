@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS */
+
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.65);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, .5);
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(61, 61, 61, 1) !important;
+}
+
+.homepage {
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    background-color: rgba(61, 61, 61, 1) !important;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 10px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+.design {
+    padding-top: 15px;
+}
+
+.cardContainer {
+    max-width: 1000px;
+    margin-bottom: 80px;
+}
+
+/* Modals */
+.modal-body img {
+    width:100%;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    background-color: #3F303B;
+    border-color: #2B2126;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #AF0029;
+    border-color: #2B2126;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #AF0029;
+    border-color: #2B2126;
+    color: #fff;
+}
+
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:focus{
+    background-color: #3F303B;
+    border-color: #2B2126;
+    color: #fff;
+}
+
+.btn-primary:visited:hover {
+    background-color: #AF0029;
+    border-color: #2B2126;
+    color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5{
+    font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.802em;
+}
+
+h2 {
+    font-size: 1.502em;
+}
+
+h3 {
+    font-size: 1.424em;
+    text-indent: -30px;
+}
+
+h4 {
+    font-size: 1.266em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+p {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.325em;
+}
