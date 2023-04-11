@@ -17,7 +17,11 @@ body{
 
 .homepage {
     padding-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+#paravert {
+    margin-bottom: 15px;
 }
 
 .footer {
@@ -25,9 +29,10 @@ body{
     color: #fff;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
     margin-top: 10px;
     position: fixed;
-    height: 60px;
+    height: 80px;
     width: 100%;
     bottom: 0;
 }
@@ -38,7 +43,7 @@ body{
 
 .cardContainer {
     max-width: 1000px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 /* Modals */
