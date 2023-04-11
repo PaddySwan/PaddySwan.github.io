@@ -72,8 +72,7 @@ body{
 }
 
 .btn-primary:visited,
-.btn-primary:active,
-.btn-primary:focus{
+.btn-primary:active {
     background-color: #3F303B;
     border-color: #2B2126;
     color: #fff;
