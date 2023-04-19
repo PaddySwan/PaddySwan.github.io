@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.footer {
+    background-color: #3F303B !important;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar,.dropdown {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.65);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, .5);
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #3F303B !important;
+}
+
+.dropdown-menu,
+.dropdown-item {
+    background-color: #634B5E;
+    border-color: #40323c;
+    color: #fff;
+}
+
+.row {
+    padding-bottom: 40px;
+}
+
+#pageHeader {
+    color: #40323c;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+}
+
+#cardsNav {
+    padding-top: 20px;
+}
+
+.btn {
+    background-color: #634B5E;
+    border-color: #634B5E;
+}
+
+.btn:hover {
+    background-color: #AF0029;
+    border-color: #AF0029;
+}
+
+.card-header {
+    background-color: #3F303B;
+    color: #fff;
+}

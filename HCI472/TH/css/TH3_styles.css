@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+.footer {
+    background-color: #3F303B !important;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar,.dropdown {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.65);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, .5);
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: #3F303B !important;
+}
+
+.card-header {
+    background-color: #3F303B;
+    color: #fff;
+}
+
+#hierarchy.container {
+    margin-bottom: 100px;
+}
+
+.dropdown-menu,
+.dropdown-item {
+    background-color: #634B5E;
+    border-color: #40323c;
+    color: #fff;
+}
+
+.row {
+    padding-bottom: 40px;
+}
+
+.btn {
+    background-color: #634B5E;
+    border-color: #634B5E;
+}
+
+.btn:hover {
+    background-color: #AF0029;
+    border-color: #AF0029;
+}
+
+#pageHeader {
+    color: #40323c;
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+.col-4 {
+    opacity: 80%;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+/* Hierarchy */
+/* Hierachy 3 - Source Serif Pro & Montserrat */
+html {font-size: 100%;} /*16px*/
+
+body {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.emphasized {
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+}
+
+.hyperlink {
+    color: #0250C5;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    line-height: 1.3;
+    font-style: normal;
+
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
