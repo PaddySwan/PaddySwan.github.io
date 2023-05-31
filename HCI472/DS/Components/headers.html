@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="The header components from a design system created by Patrick Swanson for HCI 472 at DePaul University">
+
+        <title>Swanson DS: Headers</title>
+
+        <link rel="icon" type="image/x-icon" href="../../../img/favicon.ico" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="../css/ds.css" />
+
+    </head>
+    <body>
+        <main class="d-flex flex-nowrap">
+
+            <!-- This determines the width of the sidebar. Change if needed. -->
+            <div class="flex-shrink-0 p-3 bg-purple" style="width: 300px;">
+
+                <a href="/HCI472/DS/designsystem.html" class="d-flex align-items-center text-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                    <img src="../../img/Logo/SwansonLogo_Full_DarkMode_v1.png" style="width: 100%;">
+                </a>
+
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#foundations-collapse" aria-expanded="false">
+                            Foundations
+                        </button>
+                        <div class="collapse" id="foundations-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/HCI472/DS/Foundations/typography.html" class="link-custom d-inline-flex text-decoration-none rounded">Typography</a></li>
+                                <li><a href="/HCI472/DS/Foundations/color.html" class="link-custom d-inline-flex text-decoration-none rounded">Color</a></li>
+                                <li><a href="/HCI472/DS/Foundations/logo.html" class="link-custom d-inline-flex text-decoration-none rounded">Logo</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false">
+                            Components
+                        </button>
+                        <div class="collapse" id="components-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/HCI472/DS/Components/buttons.html" class="link-custom d-inline-flex text-decoration-none rounded">Buttons</a></li>
+                                <li><a href="/HCI472/DS/Components/cards.html" class="link-custom d-inline-flex text-decoration-none rounded">Cards</a></li>
+                                <li><a href="/HCI472/DS/Components/headers.html" class="link-custom d-inline-flex text-decoration-none rounded">Headers</a></li>
+                                <li><a href="/HCI472/DS/Components/navigation.html" class="link-custom d-inline-flex text-decoration-none rounded">Navigation &amp; Footer</a></li>
+                                <li><a href="/HCI472/DS/Components/sections.html" class="link-custom d-inline-flex text-decoration-none rounded">Sections</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#patterns-collapse" aria-expanded="false">
+                            Page Patterns
+                        </button>
+                        <div class="collapse" id="patterns-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="/HCI472/DS/Patterns/homepage.html" class="link-custom d-inline-flex text-decoration-none rounded">Homepage</a></li>
+                                <li><a href="/HCI472/DS/Patterns/about.html" class="link-custom d-inline-flex text-decoration-none rounded">About Me</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="b-example-divider b-example-vr"></div>
+
+            <!-- Page Content  -->
+            <div class = "container-fluid overflow-auto">
+                <div class = "row p-5">
+                    <div id="content">
+                        ~~~~~
+                    </div><!-- Row  -->
+                </div><!-- Container -->
+            </div>      <!-- Content  -->
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <script src="js/sidebars.js"></script>
+    </body>
+</html>
