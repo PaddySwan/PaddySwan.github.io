@@ -110,6 +110,40 @@ em {
     color: var(--grayscale-500);
 }
 
+.card {
+    margin-top: 15px;
+    background-color: var(--primary-purple);
+}
+
+.card-header {
+    background-color: var(--secondary-purple);
+}
+
+.card-header h4 {
+    color: var(--grayscale-100);
+}
+
+.card h1, h2, h3, h4, h5 {
+    color: var(--grayscale-100) !important;
+}
+
+.card p {
+    color: var(--grayscale-300);
+}
+
+#suppdetail {
+    color: var(--grayscale-500);
+    line-height: 1.4;
+}
+
+.hyperlink {
+    color: var(--primary-blue) !important;
+}
+
+#color-card-header {
+    background-color: var(--secondary-purple);
+}
+
 /* From Template */
 body {
     min-height: 100vh;
