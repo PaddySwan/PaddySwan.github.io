@@ -48,7 +48,7 @@
                         <div class="collapse" id="components-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="/HCI472/DS/Components/buttons.html" class="link-custom d-inline-flex text-decoration-none rounded">Buttons</a></li>
-                                <li><a href="/HCI472/DS/Components/cards.html" class="link-custom d-inline-flex text-decoration-none rounded">Cards</a></li>
+                                <li><a href="/HCI472/DS/Components/cards.html" class="link-custom d-inline-flex text-decoration-none rounded active">Cards</a></li>
                                 <li><a href="/HCI472/DS/Components/headers.html" class="link-custom d-inline-flex text-decoration-none rounded">Headers</a></li>
                                 <li><a href="/HCI472/DS/Components/navigation.html" class="link-custom d-inline-flex text-decoration-none rounded">Navigation &amp; Footer</a></li>
                                 <li><a href="/HCI472/DS/Components/sections.html" class="link-custom d-inline-flex text-decoration-none rounded">Sections</a></li>
@@ -73,11 +73,108 @@
 
             <!-- Page Content  -->
             <div class = "container-fluid overflow-auto">
-                <div class = "row p-5">
-                    <div id="content">
-                        ~~~~~
-                    </div><!-- Row  -->
-                </div><!-- Container -->
+                <div class = "row p-4 header">
+                    <h2> Cards
+                    </h2>
+                </div>
+                <div class="col-lg-6 p-4" id="content"><p>This design system utilizes three cards states. The first: an image, title, description, and button. The second: an image, title, and description. The third: a title and description.</p>
+                </div>
+
+                <div class="row p-4 pt-0">
+                    <h3>Card Variations</h3>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4 pt-0">
+                    <div class="card mx-auto w-50" id="card-1">
+                        <img src="../media/imgs/colors/Grayscale%20300.png" class="card-img-top" alt="Primary blue color">
+                        <div class="card-header p-3 rounded-bottom" id="color-card-header">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-body p-0">Card body</p>
+                            <button class="btn btn-secondary" id="secondary-btn">Button &nbsp; &#9654;</button>
+                        </div>
+                    </div>
+
+                    <div class="card mx-auto w-50" id="card-1">
+                        <img src="../media/imgs/colors/Grayscale%20300.png" class="card-img-top" alt="Primary blue color">
+                        <div class="card-header p-3 rounded-bottom" id="color-card-header">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-body p-0">Card body</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-4 pt-0">
+                    <div class="card mx-auto w-50" id="card-1">
+                        <div class="card-header p-3 pb-0 rounded" id="color-card-header">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-body p-0">Card body</p>
+                        </div>
+                    </div>
+
+                    <div class="card mx-auto w-50" id="card-1">
+                        <div class="card-header p-3 pb-0 rounded" id="color-card-header-light">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-body p-0">Card body</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4" id="content">
+                    <h3>Accessibility Considerations</h3>
+                    <div class="col-lg-7"><p>Any image should use the "alt" tag to describe what is happening in the image. Styles for the cards are based on the primary colors and type defined in the Foundational category.</p></div>
+                </div>
+
+                <div class="row p-4 pt-0" id="content">
+                    <h3>Usage</h3>
+                    <div class="col-lg-7"><ul>
+                        <li class="mx-4" id="li-elm">
+                            <p>Cards provide structure and insight into the content found on the website. Use cards when previewing work or displaying individuals concepts.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>There are 3 variations of the card layout. Use the button when you need the card to navigate the user somewhere.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>Non-image cards may be used as labels or short lists. For example, skills/abilities.</p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row p-4 pt-0" id="code-ex">
+                    <h3 class="pb-2">Code Examples</h3>
+                    <h4>Image, Header, Description, and Button Card</h4>
+                    <pre><code>&lt;div class=&quot;card mx-auto w-50&quot; id=&quot;card-1&quot;&gt;
+    &lt;img src=&quot;../media/imgs/colors/Grayscale%20300.png&quot; class=&quot;card-img-top&quot; alt=&quot;Primary blue color&quot;&gt;
+    &lt;div class=&quot;card-header p-3 rounded-bottom&quot; id=&quot;color-card-header&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card Title&lt;/h5&gt;
+        &lt;p class=&quot;card-body p-0&quot;&gt;Card body&lt;/p&gt;
+        &lt;button class=&quot;btn btn-secondary&quot; id=&quot;secondary-btn&quot;&gt;Button &nbsp; &amp;#9654;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Image, Header, and Description Card</h4>
+                    <pre><code>&lt;div class=&quot;card mx-auto w-50&quot; id=&quot;card-1&quot;&gt;
+    &lt;img src=&quot;../media/imgs/colors/Grayscale%20300.png&quot; class=&quot;card-img-top&quot; alt=&quot;Primary blue color&quot;&gt;
+    &lt;div class=&quot;card-header p-3 rounded-bottom&quot; id=&quot;color-card-header&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card Title&lt;/h5&gt;
+        &lt;p class=&quot;card-body p-0&quot;&gt;Card body&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Header and Description Card</h4>
+                    <pre><code>&lt;div class=&quot;card mx-auto w-50&quot; id=&quot;card-1&quot;&gt;
+    &lt;div class=&quot;card-header p-3 pb-0 rounded&quot; id=&quot;color-card-header&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card Title&lt;/h5&gt;
+        &lt;p class=&quot;card-body p-0&quot;&gt;Card body&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                </div>
+
                 <div class="footer">
                     &copy; Patrick Swanson <br>Last Updated: Spring 2023 <br> Return to <a href="/HCI472.html"><b>swansonux.com/HCI472</b></a>
                 </div>
@@ -85,6 +182,6 @@
         </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-        <script src="js/sidebars.js"></script>
+        <script src="../js/sidebars.js"></script>
     </body>
 </html>

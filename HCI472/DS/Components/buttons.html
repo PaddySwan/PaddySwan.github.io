@@ -47,7 +47,7 @@
                         </button>
                         <div class="collapse" id="components-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="/HCI472/DS/Components/buttons.html" class="link-custom d-inline-flex text-decoration-none rounded">Buttons</a></li>
+                                <li><a href="/HCI472/DS/Components/buttons.html" class="link-custom d-inline-flex text-decoration-none rounded active">Buttons</a></li>
                                 <li><a href="/HCI472/DS/Components/cards.html" class="link-custom d-inline-flex text-decoration-none rounded">Cards</a></li>
                                 <li><a href="/HCI472/DS/Components/headers.html" class="link-custom d-inline-flex text-decoration-none rounded">Headers</a></li>
                                 <li><a href="/HCI472/DS/Components/navigation.html" class="link-custom d-inline-flex text-decoration-none rounded">Navigation &amp; Footer</a></li>
@@ -73,11 +73,103 @@
 
             <!-- Page Content  -->
             <div class = "container-fluid overflow-auto">
-                <div class = "row p-5">
-                    <div id="content">
-                        ~~~~~
-                    </div><!-- Row  -->
-                </div><!-- Container -->
+                <div class = "row p-4 header">
+                    <h2> Buttons
+                    </h2>
+                </div>
+                <div class="col-lg-6 p-4" id="content"><p>This design system utilizes four different states of buttons with two design options for the primary button (dark and light-mode versions).</p>
+                </div>
+
+                <div class="row p-4 pt-0">
+                    <h3>Button States</h3>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4 pt-0 pb-0">
+                    <div class="col-lg-2 col-md-4 p-3"><h4 id="btn-states">Normal</h4></div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-primary" id="primary-btn">Primary &nbsp; &#9654;</button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-secondary" id="secondary-btn">Secondary &nbsp; &#9654;</button>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4 pt-0 pb-0">
+                    <div class="col-lg-2 col-md-4 p-3"><h4 id="btn-states">Hover</h4></div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-primary hover" id="primary-btn">Primary &nbsp; &#9654;</button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-secondary hover" id="secondary-btn">Secondary &nbsp; &#9654;</button>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4 pt-0 pb-0">
+                    <div class="col-lg-2 col-md-4 p-3"><h4 id="btn-states">Inactive</h4></div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-primary" id="primary-btn" disabled>Primary &nbsp; &#9654;</button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-secondary" id="secondary-btn" disabled>Secondary &nbsp; &#9654;</button>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4 pt-0 pb-0">
+                    <div class="col-lg-2 col-md-4 p-3"><h4 id="btn-states">Focus</h4></div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-primary focus" id="primary-btn">Primary &nbsp; &#9654;</button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 p-3">
+                        <button type="button" class="btn btn-secondary focus" id="secondary-btn">Secondary &nbsp; &#9654;</button>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4" id="content">
+                    <h3>Accessibility Considerations</h3>
+                    <div class="col-lg-7"><p>Button labels should be clear and concise; it should convey an action the user will take. Buttons must have a focused state for keyboard navigation. Colors for the buttons follow WCAG guidelines for color contrast. Buttons and links are used for different purposes, they should not be used in place of each other.</p></div>
+                </div>
+
+                <div class="row p-4 pt-0" id="content">
+                    <h3>Usage</h3>
+                    <div class="col-lg-7"><ul>
+                        <li class="mx-4" id="li-elm">
+                            <p>Primarily used on the design system's cards.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>Color selection is dependent on the  surface it will be placed. Generally, dark background = Secondary button, light background = Primary button.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>Button design is based on the ID of the button. The button state design is defined in the class.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>Button text conveys an action for the user.</p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row p-4 pt-0" id="code-ex">
+                    <h3>Code Examples</h3>
+                    <h4>Primary Button</h4>
+                    <pre><code>&lt;button type="button" class="btn btn-primary" id="primary-btn"&gt;Primary&lt;/button&gt;</code></pre>
+                    <h4>Secondary Button</h4>
+                    <pre><code>&lt;button type="button" class="btn btn-secondary" id="secondary-btn"&gt;Secondary&lt;/button&gt;</code></pre>
+                    <h4>Hover State</h4>
+                    <pre><code>&lt;button type="button" class="btn btn-primary hover" id="primary-btn"&gt;Primary&lt;/button&gt;</code></pre>
+                    <h4>Focused State</h4>
+                    <pre><code>&lt;button type="button" class="btn btn-primary focus" id="primary-btn"&gt;Primary&lt;/button&gt;</code></pre>
+                </div>
+
                 <div class="footer">
                     &copy; Patrick Swanson <br>Last Updated: Spring 2023 <br> Return to <a href="/HCI472.html"><b>swansonux.com/HCI472</b></a>
                 </div>

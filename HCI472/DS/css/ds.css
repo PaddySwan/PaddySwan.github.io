@@ -144,6 +144,52 @@ em {
     background-color: var(--secondary-purple);
 }
 
+#color-card-header-light {
+    background-color: var(--alternate-magenta);
+}
+
+#btn-states {
+    color: var(--grayscale-300) !important;
+}
+
+#primary-btn {
+    background-color: var(--primary-purple);
+    color: var(--grayscale-100);
+    border-color: var(--secondary-purple);
+    border-width: 2px;
+}
+
+#secondary-btn {
+    background-color: var(--grayscale-100);
+    color: var(--primary-purple);
+    border-color: var(--secondary-purple);
+    border-width: 2px;
+}
+
+.hover {
+    background-color: var(--alternate-magenta) !important;
+    color: var(--grayscale-100) !important;
+    border-color: var(--alternate-magenta) !important;
+}
+
+.focus {
+    border-color: var(--primary-blue) !important;
+    border-width: 2px;
+}
+
+#code-ex h4 {
+    color: var(--grayscale-300) !important;
+}
+
+#card-1 {
+    border-width: 0px;
+}
+
+pre {
+    color: var(--secondary-blue);
+    white-space: pre-wrap;
+}
+
 /* From Template */
 body {
     min-height: 100vh;
