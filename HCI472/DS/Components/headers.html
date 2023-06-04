@@ -49,7 +49,7 @@
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li><a href="/HCI472/DS/Components/buttons.html" class="link-custom d-inline-flex text-decoration-none rounded">Buttons</a></li>
                                 <li><a href="/HCI472/DS/Components/cards.html" class="link-custom d-inline-flex text-decoration-none rounded">Cards</a></li>
-                                <li><a href="/HCI472/DS/Components/headers.html" class="link-custom d-inline-flex text-decoration-none rounded">Headers</a></li>
+                                <li><a href="/HCI472/DS/Components/headers.html" class="link-custom d-inline-flex text-decoration-none rounded active">Headers</a></li>
                                 <li><a href="/HCI472/DS/Components/navigation.html" class="link-custom d-inline-flex text-decoration-none rounded">Navigation &amp; Footer</a></li>
                                 <li><a href="/HCI472/DS/Components/sections.html" class="link-custom d-inline-flex text-decoration-none rounded">Sections</a></li>
                             </ul>
@@ -73,11 +73,104 @@
 
             <!-- Page Content  -->
             <div class = "container-fluid overflow-auto">
-                <div class = "row p-5">
-                    <div id="content">
-                        ~~~~~
-                    </div><!-- Row  -->
-                </div><!-- Container -->
+                <div class = "row p-4 header">
+                    <h2> Headers
+                    </h2>
+                </div>
+                <div class="col-lg-6 p-4" id="content"><p>This design system utilizes four header styles. One for dark-mode, one for light-mode, one to overlay on images, and one with a hyperlink.</p>
+                </div>
+
+                <div class="row p-4 pt-0">
+                    <h3>Header Variations</h3>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4">
+                    <div class = "row p-4 header">
+                        <h2> Header Dark
+                        </h2>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4">
+                    <div class = "row p-4 header-light">
+                        <h2> Header Light
+                        </h2>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4" id="content">
+                    <div class="p-4 rounded header-title-ovr w-50" id="header-title-ovr">
+                        <h2>Header Overlay</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. In mi est a augue fringilla. Sit amet libero pulvinar euismod nibh aliquam fringilla volutpat ipsum.</p>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4">
+                    <div class="col-lg col-md p-4" id="link-bg">
+                        <div class="header-title-link d-flex align-items-center" id="header-link">
+                            <h2>Header</h2>
+                            <p>Link &nbsp; &#9654;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-1 mb-1">
+
+                <div class="row p-4" id="content">
+                    <h3>Accessibility Considerations</h3>
+                    <div class="col-lg-7"><p>Ensuring that these sections are used appropriately to have a good color contrast is essential. </p></div>
+                </div>
+
+                <div class="row p-4 pt-0" id="content">
+                    <h3>Usage</h3>
+                    <div class="col-lg-7"><ul>
+                        <li class="mx-4" id="li-elm">
+                            <p>Used for main sections in the design system. The main headers should be used to lead a section.</p>
+                        </li>
+                        <li class="mx-4" id="li-elm">
+                            <p>The header with link and overlay headers are to be used when necessary.</p>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row p-4 pt-0" id="code-ex">
+                    <h3 class="pb-2">Code Examples</h3>
+                    <h4>Header Dark-mode</h4>
+                    <pre><code>&lt;div class="row p-4 header"&gt;
+    &lt;h2&gt;Header Dark&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Header Light-mode</h4>
+                    <pre><code>&lt;div class="row p-4 header-light"&gt;
+    &lt;h2&gt;Header Light&lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h4>Header Overlay</h4>
+                    <pre><code>&lt;div class="p-4 rounded header-title-ovr w-50" id="header-title"&gt;
+    &lt;h2&gt;Header Overlay&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet consectetur. In mi est a augue fringilla. Sit amet libero pulvinar euismod nibh aliquam fringilla volutpat ipsum.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+                    <h4>Header &amp; Link</h4>
+                    <pre><code>&lt;div class="col-lg col-md p-4" id="link-bg"&gt;
+    &lt;div class="header-title-link d-flex align-items-center" id="header-link"&gt;
+        &lt;h2&gt;Header&lt;/h2&gt;
+        &lt;p&gt;Link &nbsp; &#9654;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+                </div>
                 <div class="footer">
                     &copy; Patrick Swanson <br>Last Updated: Spring 2023 <br> Return to <a href="/HCI472.html"><b>swansonux.com/HCI472</b></a>
                 </div>

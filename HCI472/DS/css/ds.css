@@ -47,6 +47,35 @@
     color: var(--grayscale-0);
 }
 
+.header-light, .header-light h2 {
+    background-color: var(--grayscale-100);
+    color: var(--primary-purple) !important;
+    border:
+}
+
+.header-title-ovr {
+    background-color: rgba(43,33,38,.5);
+}
+
+#header-title-ovr h2 {
+    color: var(--primary-blue) !important;
+}
+
+#link-bg {
+    background-color: var(--grayscale-100);
+}
+
+.header-title-link h2 {
+    color: var(--grayscale-900) !important;
+}
+
+#header-link p {
+    color: var(--alternate-magenta);
+    text-decoration: underline;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
 #content {
     background-color: var(--primary-purple);
 }
