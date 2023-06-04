@@ -27,7 +27,11 @@
 
 /* Content */
 .bg-purple {
-    background-color: var(--primary-purple);
+    background-color: var(--primary-purple) !important;
+}
+
+.bg-light {
+    background-color: var(--grayscale-100) !important;
 }
 
 .link-custom {
@@ -115,6 +119,24 @@
 .footer {
     color: var(--grayscale-100);
     background-color: var(--primary-purple);
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-dark-ex {
+    color: var(--grayscale-100);
+    background-color: var(--primary-purple);
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-light-ex {
+    color: var(--primary-purple);
+    background-color:  var(--grayscale-100);
     text-align: center;
     bottom: 0;
     padding-bottom: 20px;
@@ -217,6 +239,65 @@ em {
 pre {
     color: var(--secondary-blue);
     white-space: pre-wrap;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+}
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.social-icons .social-icon:hover {
+    color: var(--alternate-magenta);
+}
+
+.skill-icons .skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#skills-dark h3 {
+    color: var(--primary-purple) !important;
+}
+
+.navbar-toggler-light {
+    border-color: var(--grayscale-100) !important;
+}
+
+.navbar-toggler-dark {
+    border-color: var(--primary-purple) !important;
+}
+
+.navbar-toggler:focus{
+    color: var(--primary-blue);
+}
+
+.navbar-toggler-icon-light {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(63, 48, 59, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon-dark {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 253, 253, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#nav-link-light {
+    color: var(--primary-purple);
+}
+
+#nav-link-dark {
+    color: var(--grayscale-100);
 }
 
 /* From Template */
