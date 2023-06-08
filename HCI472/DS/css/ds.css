@@ -210,6 +210,18 @@ em {
     border-width: 2px;
 }
 
+#primary-btn:hover {
+    background-color: var(--alternate-magenta) !important;
+    color: var(--grayscale-100) !important;
+    border-color: var(--alternate-magenta) !important;
+    cursor: pointer;
+}
+
+#primary-btn:focus {
+    border-color: var(--primary-blue) !important;
+    border-width: 2px;
+}
+
 #secondary-btn {
     background-color: var(--grayscale-100);
     color: var(--primary-purple);
