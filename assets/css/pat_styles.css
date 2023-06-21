@@ -35,3 +35,23 @@ body {
     border: 4px solid #AF0029;
 
 }
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #3F303B;
+    color: #FDFDFD;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+.social-icons .social-icon:hover {
+    background-color: #AF0029;
+    color: #FDFDFD;
+}
