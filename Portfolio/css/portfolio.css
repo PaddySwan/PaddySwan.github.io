@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Colors */
+:root {
+    /* Purples */
+    --primary-purple: #3F303B;
+    --secondary-purple: #2B2126;
+    /* Blues */
+    --primary-blue: #06DCF5;
+    --secondary-blue: #05BCE5;
+    --tertiary-blue: #059FD5;
+    /* Alts */
+    --alternate-magenta: #AF0029;
+    /* Grayscale */
+    --grayscale-0: #FFFFFF;
+    --grayscale-100: #FDFDFD;
+    --grayscale-300: #DBDBDB;
+    --grayscale-500: #B2B2B2;
+    --grayscale-700: #747474;
+    --grayscale-900: #262626;
+    --grayscale-1000: #000000;
+}
+
+/* Body */
+body {
+    background-color: var(--grayscale-100);
+}
+
+/* Navbar */
+.navbar-bg {
+    background-color: var(--grayscale-100);
+}
+
+.navbar-toggler-light {
+    border-color: var(--grayscale-100) !important;
+}
+
+.navbar-toggler-dark {
+    border-color: var(--primary-purple) !important;
+}
+
+.navbar-toggler:focus{
+    color: var(--primary-blue);
+}
+
+.navbar-toggler-icon-light {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(63, 48, 59, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon-dark {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(253, 253, 253, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-toggle-nav a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+}
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+    background-color: var(--alternate-magenta);
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-icons .social-icon:hover {
+    color: var(--alternate-magenta) !important;
+}
+
+.btn-nav {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: var(--primary-purple);
+}
+.btn-nav:hover,
+.btn-nav:focus {
+    color: var(--grayscale-100);
+    background-color: var(--alternate-magenta);
+}
+
+/* Footer */
+.footer {
+    color: var(--primary-purple);
+    background-color:  var(--grayscale-100);
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+/* Typography */
+/* Merriweather & Merriweather Sans */
+html {font-size: 100%;} /*16px*/
+
+body {
+    background: var(--grayscale-100);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--grayscale-700);
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--grayscale-900);
+}
+
+.emphasized {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--grayscale-900);
+}
+
+.hyperlink {
+    color: var(--alternate-magenta);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-style: normal;
+    color: var(--primary-purple);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+    color: #000;
+}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
