@@ -14,6 +14,8 @@
         <!-- Portfolio Stylesheet -->
         <link rel="stylesheet" href="/Portfolio/css/portfolio.css">
 
+        <script src="/Portfolio/js/gallery.js"></script>
+
         <!-- Font Awesome Icons-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -59,21 +61,49 @@
                 <h2 class="light text-center">3D Printing</h2>
             </div>
 
-            <!-- Main content here -->
-            <div class="row p-4 gy-4 justify-content-center">
-                <div class="col-xl-5 col-lg-6 col-md-10 col-11">
-                    <a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-md-10 col-11">
-                    <a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-md-10 col-11">
-                    <a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
-                </div>
-                <div class="col-xl-5 col-lg-6 col-md-10 col-11">
-                    <a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
+            <!-- Image Gallery -->
+            <div class="container mt-5">
+                <div class="row gallery">
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/IMG_1289.JPG" alt="Image 1" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/IMG_1289.JPG">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/img_1302.png" alt="Image 2" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/img_1302.png">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/TAZ.png" alt="Image 3" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/TAZ.png">
+                    </div>
+                    <!-- Add more images as needed -->
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" alt="Large Image" id="modalImage" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content here
+<div class="row p-4 gy-4 justify-content-center">
+<div class="col-xl-5 col-lg-6 col-md-10 col-11">
+<a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
+</div>
+<div class="col-xl-5 col-lg-6 col-md-10 col-11">
+<a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
+</div>
+<div class="col-xl-5 col-lg-6 col-md-10 col-11">
+<a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
+</div>
+<div class="col-xl-5 col-lg-6 col-md-10 col-11">
+<a href="#"><img src="/Portfolio/img/Placeholder.png" class="w-100 recent-work rounded-1" alt="placeholder"></a>
+</div>
+</div>
+-->
 
             <!-- Footer -->
             <div class="container">

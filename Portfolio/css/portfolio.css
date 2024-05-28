@@ -132,6 +132,13 @@ body {
     list-style-type: none;
 }
 
+/* Image Gallery */
+.gallery img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 /* Typography */
 /* Merriweather & Lato */
 html {font-size: 100%;} /*16px*/
