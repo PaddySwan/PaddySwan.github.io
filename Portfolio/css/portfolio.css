@@ -132,11 +132,37 @@ body {
     list-style-type: none;
 }
 
-/* Image Gallery */
+/* Cards */
+.card {
+    background-color: var(--primary-purple);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform .5s;
+}
+
+.border-5 {
+    border-color: var(--secondary-purple);
+}
+
+.btn {
+    color: var(--secondary-purple);
+    background-color: var(--grayscale-100);
+    border-color: var(--secondary-purple);
+}
+
+.btn:hover {
+    color: var(--grayscale-0);
+    background-color: var(--alternate-magenta);
+    border-color: var(--secondary-purple);
+}
+
+/* Images */
 .gallery img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }
 
 /* Typography */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D Printing | Patrick Swanson</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+        <!-- Bootstrap Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- Portfolio Stylesheet -->
+        <link rel="stylesheet" href="/Portfolio/css/portfolio.css">
+
+        <script src="/Portfolio/js/gallery.js"></script>
+
+        <!-- Font Awesome Icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <!-- Navbar -->
+            <div class="container">
+                <div class="row navbar-bg px-3">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <div class="container border-bottom">
+                            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
+                                <span class="navbar-toggler-icon navbar-toggler-icon-light"></span>
+                            </button>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-block d-none">
+                                <img class="d-lg-block d-none home" src="/Portfolio/img/logo/SwansonLogo_Full_v1.png" style="width: 250px;" alt="An origami swan with the name, Patrick Swanson next to it">
+                            </a>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-none d-md mx-auto justify-content-center">
+                                <img class="" src="/Portfolio/img/logo/SwansonLogo_Swan250_v2.png" style="width: 75px;" alt="An origami swan">
+                            </a>
+                            <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+                                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/portfolio.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/about-me.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/resume/Swanson_Resume_Summer24.pdf" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Body -->
+            <div class="section p-4 mt-3 justify-content-center">
+                <h2 class="light text-center">BattleBots</h2>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="container mt-5">
+                <div class="row gallery">
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/IMG_1289.JPG" alt="Image 1" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/IMG_1289.JPG">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/img_1302.png" alt="Image 2" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/img_1302.png">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/Portfolio/3dprinting/imgs/TAZ.png" alt="Image 3" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="/Portfolio/3dprinting/imgs/TAZ.png">
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" alt="Large Image" id="modalImage" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="row text-center">
+                        <h2>Let's Connect</h2>
+                        <p>I'm quick to respond, get in touch for opportunities or to say hi!</p>
+                    </div>
+                    <div class="row footer pt-0">
+                        <div class="col d-inline-flex justify-content-center">
+                            <li class="pe-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/swansonux/" target="_blank"><i class="fab fa-linkedin-in" alt="LinkedIn Logo"></i></a>
+                                </div>
+                            </li>
+                            <li class="ps-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="mailto: patswancreations@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email Icon"></i></a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <b>Patrick Swanson | 2024</b>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    </body>
+</html>
