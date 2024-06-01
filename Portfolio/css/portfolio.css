@@ -8,6 +8,7 @@
 :root {
     /* Purples */
     --primary-purple: #3F303B;
+    --primary-purple_trans: rgba(25,19,23,0.7);
     --secondary-purple: #2B2126;
     /* Blues */
     --primary-blue: #06DCF5;
@@ -158,11 +159,42 @@ body {
     border-color: var(--secondary-purple);
 }
 
-/* Images */
-.gallery img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
+/* Image Gallery Overlay */
+.position-relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    background-color: var(--primary-purple_trans);
+    color: var(--grayscale-0);
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.overlay h4 {
+    margin: 0;
+    font-size: 1.2vw; /* Example font size in viewport width units */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+    .overlay h4 {
+        font-size: 16px; /* Set a minimum font size for readability */
+    }
+}
+
+/* Adjust font size for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .overlay h4 {
+        font-size: 16px; /* Example font size in viewport width units for medium screens */
+    }
 }
 
 /* Typography */
