@@ -106,6 +106,21 @@ body {
     background-color: var(--primary-purple);
 }
 
+/* Image height for large screens */
+@media (min-width: 992px) {
+  /* Large desktops and laptops */
+  .section img {
+    max-height: 400px; /* Adjust the max-height as needed */
+  }
+}
+
+@media (max-width: 991px) {
+  /* Medium devices (tablets, less than 992px) */
+  .section img {
+    max-height: none; /* Reset max-height for smaller screens */
+  }
+}
+
 .recent-work {
     transition: transform .5s;
 }
