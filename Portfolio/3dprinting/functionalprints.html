@@ -66,7 +66,7 @@
                         <div class="position-relative">
                             <img
                                  src="/Portfolio/3dprinting/imgs/function/controller_stand.webp"
-                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 class="w-100 shadow-1-strong rounded mb-4 modal-trigger"
                                  alt="A blue, 3D printed stand for a Playstation 5 controller with a controller on it"
                                  />
                             <div class="overlay">
@@ -77,7 +77,7 @@
                         <div class="position-relative">
                             <img
                                  src="/Portfolio/3dprinting/imgs/function/Coinbank.webp"
-                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 class="w-100 shadow-1-strong rounded mb-4 modal-trigger"
                                  alt="A clear and red, 3D printed coin bank with a mechanism to sort coins into clear individual tubes."
                                  />
                             <div class="overlay">
@@ -90,7 +90,7 @@
                         <div class="position-relative">
                             <img
                                  src="/Portfolio/3dprinting/imgs/function/dryerknob.webp"
-                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 class="w-100 shadow-1-strong rounded mb-4 modal-trigger"
                                  alt="A clear, 3D printed dryer knob to replace the broken manufaturer provided knob"
                                  />
                             <div class="overlay">
@@ -103,7 +103,7 @@
                         <div class="position-relative">
                             <img
                                  src="/Portfolio/3dprinting/imgs/function/glassesskull.webp"
-                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 class="w-100 shadow-1-strong rounded mb-4 modal-trigger"
                                  alt="A white, 3D printed skull with a place to hold glasses as if the skull is wearing them, and a base for coins and other small items"
                                  />
                             <div class="overlay">
@@ -113,12 +113,24 @@
                         <div class="position-relative">
                             <img
                                  src="/Portfolio/3dprinting/imgs/function/Filamentholder.webp"
-                                 class="w-100 shadow-1-strong rounded mb-4"
+                                 class="w-100 shadow-1-strong rounded mb-4 modal-trigger"
                                  alt="A gray, 3D printed plastic filament holder for my 3D printer."
                                  />
                             <div class="overlay">
                                 <h4 class="light m-2">3D Printer Filament Holder</h4>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade p-5" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="" class="img-fluid rounded border" id="modalImage" alt="Large Image">
+                            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                     </div>
                 </div>
@@ -154,6 +166,9 @@
         </main>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript for Modal Functionality -->
+        <script src="/Portfolio/js/gallery.js"></script>
 
     </body>
 </html>

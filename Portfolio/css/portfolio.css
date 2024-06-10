@@ -108,17 +108,17 @@ body {
 
 /* Image height for large screens */
 @media (min-width: 992px) {
-  /* Large desktops and laptops */
-  .section img {
-    max-height: 400px; /* Adjust the max-height as needed */
-  }
+    /* Large desktops and laptops */
+    .section img {
+        max-height: 400px; /* Adjust the max-height as needed */
+    }
 }
 
 @media (max-width: 991px) {
-  /* Medium devices (tablets, less than 992px) */
-  .section img {
-    max-height: none; /* Reset max-height for smaller screens */
-  }
+    /* Medium devices (tablets, less than 992px) */
+    .section img {
+        max-height: none; /* Reset max-height for smaller screens */
+    }
 }
 
 .recent-work {
@@ -209,6 +209,38 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
     .overlay h4 {
         font-size: 16px; /* Example font size in viewport width units for medium screens */
+    }
+}
+
+/* Modal */
+/* Button Coloring */
+.btn-close-white {
+    opacity: 1;
+    background-color: #fff;
+}
+/* CSS for Modal Body */
+.modal-body {
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+/* CSS for Larger Modals */
+.modal-dialog {
+    max-width: 50%; /* Set the initial max-width for large screens */
+    width: auto;
+    margin: auto;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 991.98px) { /* Target tablets and smaller screens */
+    .modal-trigger {
+        pointer-events: none; /* Disable pointer events on the images */
+    }
+}
+
+@media (max-width: 767.98px) { /* Target phones */
+    .modal-trigger {
+        pointer-events: none; /* Disable pointer events on the images */
     }
 }
 
