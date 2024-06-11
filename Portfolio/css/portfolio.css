@@ -218,6 +218,12 @@ body {
     opacity: 1;
     background-color: #fff;
 }
+
+/* Modal Cursor */
+.modal-trigger {
+    cursor: pointer;
+}
+
 /* CSS for Modal Body */
 .modal-body {
     position: relative;
