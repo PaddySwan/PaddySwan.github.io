@@ -276,6 +276,10 @@ p {
     color: var(--alternate-magenta);
 }
 
+.hyperlink2 {
+    color: var(--primary-blue);
+}
+
 .hb {
     font-size: 4.0rem;
     font-family: 'Merriweather Black', serif;
