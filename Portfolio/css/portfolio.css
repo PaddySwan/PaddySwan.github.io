@@ -259,6 +259,7 @@ body {
     background-color: var(--primary-purple);
     color: var(--grayscale-100);
     border-color: var(--secondary-purple);
+    z-index: 10;
 }
 
 #btn-back-to-top:hover {
