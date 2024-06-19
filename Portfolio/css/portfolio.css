@@ -266,6 +266,26 @@ body {
     background-color: var(--alternate-magenta);
 }
 
+/* Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--alternate-magenta);
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    background-color: var(--alternate-magenta);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+.carousel-border {
+    border: 4px solid;
+    border-color: var(--alternate-magenta); /* Primary Purple border */
+    border-radius: 10px; /* Rounded corners */
+}
+
 /* Typography */
 /* Merriweather & Lato */
 html {font-size: 100%;} /*16px*/
