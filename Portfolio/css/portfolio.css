@@ -382,6 +382,10 @@ p {
     padding: 5px;
 }
 
+.sub-light {
+    color: var(--alternate-magenta);
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
     font-weight: 400;
