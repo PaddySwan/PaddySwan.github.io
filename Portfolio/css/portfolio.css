@@ -351,6 +351,10 @@ p {
     color: var(--grayscale-100);
 }
 
+.magenta {
+    color: var(--alternate-magenta);
+}
+
 .offwhite {
     color: var(--alternate-beige);
 }
