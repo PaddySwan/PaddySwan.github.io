@@ -325,6 +325,10 @@ p {
     color: var(--grayscale-900);
 }
 
+.regular {
+    color: var(--grayscale-900);
+}
+
 .emphasized {
     font-weight: bold;
     font-style: italic;
