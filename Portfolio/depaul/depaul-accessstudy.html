@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Thanks for checking out my source code! Everything here is from scratch. I have some sections commented out across the site; that just means they're not ready yet, check back later! -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessible Usability Study | Patrick Swanson</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+        <!-- Bootstrap Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- Portfolio Stylesheet -->
+        <link rel="stylesheet" href="/Portfolio/css/portfolio.css">
+
+        <!-- Font Awesome Icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <!-- Navbar -->
+            <div class="container">
+                <div class="row navbar-bg px-3">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <div class="container border-bottom">
+                            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
+                                <span class="navbar-toggler-icon navbar-toggler-icon-light"></span>
+                            </button>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-block d-none">
+                                <img class="d-lg-block d-none home" src="/Portfolio/img/logo/SwansonLogo_Full_v1.png" style="width: 250px;" alt="An origami swan with the name, Patrick Swanson next to it">
+                            </a>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-none d-md mx-auto justify-content-center">
+                                <img class="" src="/Portfolio/img/logo/SwansonLogo_Swan250_v2.png" style="width: 75px;" alt="An origami swan">
+                            </a>
+                            <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+                                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/portfolio.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/about-me.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/resume/Swanson_Resume_Summer24.pdf" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <button
+                    type="button"
+                    class="btn btn-lg"
+                    id="btn-back-to-top"
+                    aria-label="Return to top of page"
+                    >
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+            <!-- Main Body -->
+            <div class="section p-4 mt-3 justify-content-center">
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-6 align-self-center">
+                            <h1 class="light text-center m-1">Evaluation of Amazon Shopping’s Accessibility with Screen Readers</h1>
+                            <p class="light">By: Ana M. Jusay, Patrick Swanson, and Lucy Wang</p>
+                            <p class="light">DePaul University - HCI 511: Accessibility Considerations</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="/Portfolio/depaul/imgs/HCI511/depaul_accessbilitystudycover.webp" class="img-fluid rounded" alt="A collection of items with a box in the center with the Amazon logo on it">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content here -->
+            <div class="p-4 mt-3 justify-content-center">
+                <div class="container">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Overview</h2>
+                            <p>
+                                In collaboration with Ana M. Jusay and Lucy Wang from DePaul University, we studied Amazon Shopping's accessibility for users with visual impairments. Our research with three visually impaired participants revealed challenges in navigating the site, understanding product details, and managing checkout. They suggested clearer product descriptions, a dedicated "Screen Reader" mode to reduce clutter, and improved notifications for price changes and item availability. These insights highlight the importance of ongoing accessibility improvements on e-commerce platforms like Amazon, benefiting all users.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <h3 class="sub-light">Role</h3>
+                                <ul class="regular">
+                                    <li><b>Study Design</b>: Contributed to the creation of research objectives and methodology</li>
+                                    <li><b>Usability Testing</b>: Conducted virtual usability testing sessions</li>
+                                    <li><b>Data Analysis</b>: Used session notes to identify key insights</li>
+                                    <li><b>Reporting</b>: Co-authored the final report for the study</li>
+                                </ul>
+                            </div>
+                            <div class="row pt-4">
+                                <a href="/Portfolio/depaul/imgs/HCI511/AmazonUsabilityStudy_HCI511_GroupAmazon.pdf" class="btn w-50" target="_blank">View Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <!-- Intro -->
+                <div class="row gx-5 justify-content-evenly align-items-center">
+                    <div class="col-lg-7">
+                        <h2>Introduction</h2>
+                        <p>Online shopping has become integral to consumer culture, especially during the COVID-19 pandemic, which accelerated the shift from brick-and-mortar stores to online platforms. However, ensuring accessibility for users with visual impairments remains a challenge. This study evaluates the accessibility of Amazon Shopping for users who are blind or have low vision, focusing on the experience of using screen readers.</p>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img
+                             src="/Portfolio/depaul/imgs/HCI511/depaul_amazonlogo.webp"
+                             class="shadow-1-strong rounded img-fluid carousel-border"
+                             alt="Amazon.com logo"
+                             />
+                        <p id="caption">https://m.media-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png</p>
+                    </div>
+                </div>
+
+                <!-- Participants/Methods/Data Collection -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Participants and Methods</h2>
+                        <h3>Participants</h3>
+                        <p>We recruited three visually impaired participants through personal networks, ensuring they were at least 18 years old. The study was conducted virtually using Zoom, with participants performing tasks related to browsing, adding items to their cart, checking out, and reviewing orders. Data was collected through recordings, notes, and affinity diagrams to identify patterns and themes.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-5">
+                        <table class="table table-striped carousel-border rounded">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Pseudonym</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Screen Reader</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Julia</td>
+                                    <td>46-55</td>
+                                    <td>Female</td>
+                                    <td>Indiana, USA</td>
+                                    <td>NVDA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Daisy</td>
+                                    <td>65+</td>
+                                    <td>Female</td>
+                                    <td>Illinois, USA</td>
+                                    <td>JAWS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Shelby</td>
+                                    <td>36-45</td>
+                                    <td>Female</td>
+                                    <td>Illinois, USA</td>
+                                    <td>JAWS</td>
+                                </tr>
+                            </tbody>
+                            <caption>Research Study Participants and Demographics</caption>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h3>Procedures</h3>
+                        <p>All usability testing sessions were conducted virtually using Zoom. Each session included one researcher acting as both the moderator and observer, following a standardized procedure script. Participants were given an informed consent document to review and verbally consented to the session, which was recorded. Each participant received a $15 Amazon gift card for use during the testing.</p>
+                        <p>To establish participants' online shopping habits, we asked pre-test questions about their experience with screen readers and online shopping. Participants then shared their screens to complete the following tasks:</p>
+                        <ol class="regular">
+                            <li>Search for an item within given parameters (under $13 with Prime/under $7 without Prime, 4-star user rating, eligible for Prime shipping) and add it to their cart.</li>
+                            <li>Visit their cart and purchase the item using the provided gift card.</li>
+                            <li>Imagine a few days have passed, navigate to their recently placed order and find the expected delivery date.</li>
+                        </ol>
+                        <p>Participants rated their experiences and shared thoughts after each task. We followed up with final questions about their overall experience on Amazon, additional comments about online shopping, and demographic questions.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h3>Data Collection and Analysis</h3>
+                        <p>We collected data through handwritten and digital notes, further detailed in follow-up team sessions reviewing recorded Zoom meetings. We created an affinity diagram using Figma’s FigJam feature to identify patterns/themes, informing our recommendations for Amazon Shopping.</p>
+                    </div>
+                </div>
+
+                <!-- Findings -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Findings</h2>
+                        <h3>Task #1: Browsing Amazon</h3>
+                        <p>Participants found browsing challenging due to clutter and time spent ensuring the accuracy of chosen products.</p>
+                        <ul class="regular">
+                            <li><b>Product Description</b>: Participants needed sighted assistance for items requiring more insight into texture or “look and feel”.</li>
+                            <li><b>Product Recommendation</b>: Recommended products caused confusion and increased navigation time, as participants sifted through unwanted items before finding their search results.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-1">
+                    <div class="col-lg">
+                        <h3>Task #2: Checkout</h3>
+                        <p>Checkout was less challenging but included familiar processes like navigating the cart and completing payment.</p>
+                        <ul class="regular">
+                            <li><b>Information Overload</b>: Participants experienced frustration with advertisements and related item suggestions on the checkout page.</li>
+                            <li><b>Adding a Gift Card</b>: Challenges arose when participants tried to add gift cards via email or code, with difficulties finding the code field or understanding the gift card email structure.</li>
+                            <li><b>Payment Process</b>: Participants struggled with default payment options prioritizing credit cards over gift cards, causing mistrust and hesitation.</li>
+                            <li><b>Pricing Changes</b>: One participant encountered an unexpected price change, not informed until the checkout page.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-1">
+                    <div class="col-lg">
+                        <h3>Task #3: Order Review</h3>
+                        <p>Participants found reviewing orders the easiest task.</p>
+                        <ul class="regular">
+                            <li><b>Efficient Navigation</b>: Navigation to the "Orders" page was intuitive and quick.</li>
+                            <li><b>Mobile Preference</b>: Participants typically preferred the mobile version of Amazon Shopping, finding it more accessible than the desktop version.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Discussion -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Discussion</h2>
+                        <p>Our evaluation highlights the need for improved accessibility on Amazon Shopping for screen reader users. Recommendations include enhancing product descriptions, optimizing product recommendations, simplifying gift card usage, and implementing continuous accessibility improvements. These findings underscore the importance of web accessibility for visually impaired users, advocating for more inclusive digital experiences.</p>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h2>Recommendations</h2>
+                        <ol class="regular">
+                            <li><b>Product Descriptions and User Guidance:</b></li>
+                            <ul class="regular">
+                                <li>Collaborate with sellers for detailed product descriptions.</li>
+                                <li>Use AI to generate descriptions, including texture-related descriptors.</li>
+                            </ul>
+                            <li><b>Product Recommendations for Screen Reader Users:</b></li>
+                            <ul class="regular">
+                                <li>Introduce a “Screen Reader” mode to eliminate extra advertisements and recommendations.</li>
+                            </ul>
+                            <li><b>Adding and Using Gift Cards:</b></li>
+                            <ul class="regular">
+                                <li>Provide clear instructions for activating gift cards from emails.</li>
+                                <li>Add a gift card balance notification or make it the default payment option.</li>
+                            </ul>
+                            <li><b>Continuous Accessibility Improvements:</b></li>
+                            <ul class="regular">
+                                <li>Add dynamic notifications for changes in item details (price, size, color).</li>
+                                <li>Maintain screen reader position on page return to aid navigation continuity.</li>
+                            </ul>
+                        </ol>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img
+                             src="/Portfolio/depaul/imgs/HCI511/depaul_amazonhomepage.webp"
+                             class="shadow-1-strong rounded img-fluid carousel-border"
+                             alt="Amazon.com logo"
+                             />
+                        <p id="caption">https://technicallyautonomous.com/wp-content/uploads/2021/05/Screen-Shot-2021-05-08-at-5.56.52-PM-1024x624.jpg</p>
+                    </div>
+                </div>
+
+                <!-- Limitations -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Limitations</h2>
+                        <p>The study had a limited number of participants, all with similar backgrounds. A more diverse participant pool would be preferable for generalization. Additionally, the freedom given to participants in selecting items for purchase led to substantial variation in task completion times.</p>
+
+                        <p>Thank you for checking out my study, check the top of the page for the link to the full report!</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr/>
+
+            <!-- Footer -->
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="row text-center">
+                        <h2>Let's Connect</h2>
+                        <p>I'm quick to respond, get in touch for opportunities or to say hi!</p>
+                    </div>
+                    <div class="row footer pt-0">
+                        <div class="col d-inline-flex justify-content-center">
+                            <li class="pe-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/swansonux/" target="_blank"><i class="fab fa-linkedin-in" alt="LinkedIn Logo"></i></a>
+                                </div>
+                            </li>
+                            <li class="ps-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="mailto: patswancreations+jobs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email Icon"></i></a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <b>Patrick Swanson | 2024</b>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript for Back to Top Button -->
+        <script src="/Portfolio/js/bttb.js"></script>
+
+    </body>
+</html>
