@@ -309,6 +309,44 @@ body {
     transform: translateY(25px);
 }
 
+/* Pulsing Swan */
+.pulse {
+    animation: pulse 1.5s, zoom 1.5s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.5); /* Zoomed in */
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+#load {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#load.loaded {
+    opacity: 1;
+}
+
 /* Typography */
 /* Merriweather & Lato */
 html {font-size: 100%;} /*16px*/
