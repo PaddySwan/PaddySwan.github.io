@@ -73,7 +73,8 @@
                     <div class="row justify-content-evenly">
                         <div class="col-lg-6 align-self-center">
                             <h1 class="light text-center m-1">Designing an Interactive Fantasy Esports Platform for the LCS</h1>
-                            <p class="light">HCI 594: Capstone</p>
+                            <p class="light">By: Swagato Basu, Sean Foley, Praneeth Guggilam, Patrick Swanson, and Alyssa Tan</p>
+                            <p class="light">DePaul University - HCI 594: Capstone</p>
                         </div>
                         <div class="col-lg-6">
                             <img src="/Portfolio/depaul/imgs/HCI594/depaul_capstonecover.webp" class="img-fluid rounded" alt="A screenshot of a mockup of a fantasy LCS draft room for fantasy e-sports">
@@ -88,25 +89,393 @@
                     <div class="row gx-5 justify-content-evenly">
                         <div class="col-lg-6">
                             <h2>Overview</h2>
-                            <p>Lorem</p>
+                            <p>In this report, we present the culmination of our user research, analysis, and design of a new fantasy LCS (League Championship Series) platform called CounterPick. We performed surveys and interviews, proposal evaluations, and usability testing to create three iterations of prototypes. Data shows that new users have no desire to mix fantasy sports with betting, preferring a smooth onboarding process to immerse them in a casual environment. As for expert users, they prefer a customizable experience that allows them to personalize their leagues. Our proposal review showed that we needed to ensure consistency and usability in our design, while usability testing provided us with specific observations that we used to improve various screens.</p>
                         </div>
                         <div class="col-lg-6">
-                            <h3 class="sub-light">Role</h3>
-                            <p>Lorem</p>
+                            <div class="row">
+                                <h3 class="sub-light">Tasks</h3>
+                                <ul class="regular">
+                                    <li><b>Project Conceptualization</b>: Led the conceptualization and development of CounterPick</li>
+                                    <li><b>Planning and Research</b>: Conducted strategic planning, user research, and iterative prototyping</li>
+                                    <li><b>User-Centric Design</b>: Implemented user-centric design principles to enhance engagement and usability</li>
+                                    <li><b>Insight Synthesis</b>: Synthesized insights from user surveys, expert interviews, and heuristic evaluations</li>
+                                    <li><b>Platform Development</b>: Guided the platform's evolution from concept to a robust esports experience</li>
+                                </ul>
+                            </div>
+                            <div class="row pt-4">
+                                <a href="/Portfolio/depaul/imgs/HCI594/GGG_HCI594_ProjectFinalReport_revis.pdf" class="btn w-50" target="_blank">View Report</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="container mt-5">
+                <!-- Intro -->
                 <div class="row gx-5 justify-content-evenly align-items-center">
-                    <div class="col-lg-7">
-                        Lorem
+                    <div class="col-lg-6">
+                        <h2>Introduction</h2>
+                        <p>League of Legends, with over 100 million monthly players globally, anchors a robust esports ecosystem. Despite its worldwide appeal, the North American League Championship Series (LCS) has faced challenges in maintaining viewer engagement. For instance, the LCS Summer Split of 2023 saw declining viewership, highlighting the need for innovative solutions to reinvigorate interest (Esports Charts, 2023).</p>
+                        <p>Our project, CounterPick, addresses these challenges by introducing a fantasy esports platform tailored for LCS fans, aiming to enhance engagement and revive enthusiasm within the community.</p>
                     </div>
-                    <div class="col-lg-5 text-center">
-                       Lorem
+                    <div class="col-lg-6">
+                        <img src="/Portfolio/depaul/imgs/HCI594/depaul_counterpicklogo.webp" class="img-fluid rounded carousel-border" alt="The CounterPick logo, the word 'Counterpick' but the 't' is a sword.">
                     </div>
                 </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h3>Competitor Analysis</h3>
+                        <p>Existing fantasy platforms such as DraftKings Fantasy and E-GO offer engagement opportunities but often fall short in providing a fully immersive experience specifically designed for League of Legends esports. These platforms face usability issues and lack innovative features tailored to LCS fans.</p>
+                        <p>CounterPick aims to surpass existing platforms by addressing these shortcomings and introducing novel features that resonate with both new and experienced users.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Human Factors Basis</h3>
+                        <p>Understanding player motivations is crucial in designing effective fantasy sports platforms. Farquhar and Meeds (2007) categorize fantasy sport players into distinct groups based on their engagement preferences, guiding CounterPick's design to cater to a diverse audience.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h3>Goals</h3>
+                        <p>CounterPick's development focuses on three primary goals: iterative prototyping and user feedback, usability improvements, and feature innovation. By prioritizing these objectives, we aim to create a user-centric platform that fosters active engagement and community interaction among LCS fans.</p>
+                        <ul class="regular">
+                            <li><b>Iterative Prototyping and User Feedback</b>: Refining our design based on continuous user input, progressing from low-fidelity to high-fidelity prototypes.</li>
+                            <li><b>Usability Improvements</b>: Addressing common usability issues identified in competitor platforms to enhance accessibility and user satisfaction.</li>
+                            <li><b>Feature Development</b>: Introducing innovative features that differentiate CounterPick, appealing to both casual viewers and dedicated esports enthusiasts.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Methods -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h2>Methods</h2>
+                        <p>CounterPick employs user-centric methodologies to gather insights and refine design iteratively. Methods include user surveys, expert interviews, heuristic evaluations, and usability testing to ensure our platform meets user needs effectively.</p>
+                        <h3>User Survey</h3>
+                        <p>Conducted via Optimal Workshop, our survey gathered qualitative and quantitative data from users regarding their preferences and expectations from fantasy esports platforms.</p>
+                        <h3>Expert User Interviews</h3>
+                        <p>Interviews with experienced League of Legends players and fantasy sports enthusiasts provided deep insights into user behaviors, frustrations, and expectations.</p>
+                        <h3>Heuristic Evaluation</h3>
+                        <p>A heuristic evaluation assessed CounterPick's prototype against usability heuristics, guiding improvements in navigation, error handling, and visual design.</p>
+                        <h3>Usability Testing</h3>
+                        <p>Usability testing of CounterPick's mid-fidelity prototype involved both new and expert users, identifying usability challenges and guiding iterative improvements.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/Portfolio/depaul/imgs/HCI594/depaul_surveyquestions.webp" class="img-fluid rounded carousel-border" alt="A list of survey questions">
+                        <p>Survey Questions for Non-Expert Users</p>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-5">
+                        <h2>Results</h2>
+                        <p>Insights gathered from our research methodologies shaped CounterPick's design direction, informing key deliverables and guiding principles for an immersive fantasy esports experience.</p>
+                        <h3>Conceptual Model and Site Map</h3>
+                        <p>CounterPick's conceptual model is built around three core principles: Community, Accessibility, and League Features.</p>
+                        <ul class="regular">
+                            <li><b>Community</b>: We designed features that foster interaction among users, such as forums, leaderboards, and live chat during matches. These features aim to create a sense of camaraderie and competition among users.</li>
+                            <li><b>Accessibility</b>: Ensuring the platform is easy to navigate for users of all experience levels is crucial. We implemented intuitive navigation menus, clear labeling, and help sections that guide users through the platform’s features.</li>
+                            <li><b>League Features</b>: We included features tailored specifically for LCS fans, such as real-time statistics, player profiles, and match previews. These features provide users with the necessary information to make informed decisions in their fantasy leagues.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <img src="/Portfolio/depaul/imgs/HCI594/depaul_conceptmodel.webp" class="img-fluid rounded carousel-border" alt="A list of survey questions">
+                        <p>Conceptual Model of CounterPick</p>
+                    </div>
+                </div>
+
+                <!-- Personas -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-3">
+                    <div class="col-lg">
+                        <h3>Personas</h3>
+                        <p>Based on our user research, we developed two key personas that represent the diverse needs and motivations of our target audience:</p>
+                    </div>
+                    <div class="row gx-5 justify-content-evenly align-items-top mt-1">
+                        <div class="col-lg-6">
+                            <h4>The Novice Player</h4>
+                            <img src="/Portfolio/depaul/imgs/HCI594/noviceuserv2.webp" class="img-fluid rounded carousel-border" alt="The Novice Player persona. Name: Brock, Age: 18.">
+                            <p class="pt-2">A fan who enjoys watching LCS matches occasionally and is new to fantasy esports. This persona values simplicity and clear instructions to get started. The Novice Player wants an easy-to-use platform where they can quickly draft players, access basic player stats, and join leagues with minimal effort. They appreciate features that provide context and guidance, such as tooltips and tutorials.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>The Expert Player</h4>
+                            <img src="/Portfolio/depaul/imgs/HCI594/expertuserv2.webp" class="img-fluid rounded carousel-border" alt="The Expert Player persona. Name: Ryan, Age: 25.">
+                            <p class="pt-2">A dedicated fan who follows LCS closely and participates in multiple fantasy leagues. This persona seeks in-depth statistics, strategic insights, and community engagement. The Expert Player is interested in detailed analytics, live match updates, and in-depth player comparisons to make strategic decisions. They value features that allow for interaction with other users, such as forums, leaderboards, and live chats, which enhance their competitive experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-7">
+                        <h3>User Survey Findings</h3>
+                        <p>Our user survey (28 responses), conducted via Optimal Workshop, gathered responses from a broad range of LCS fans and fantasy sports enthusiasts. Key findings include:</p>
+                        <ul class="regular">
+                            <li><b>Feature Preferences</b>: Users expressed a strong preference for real-time updates, player statistics, and easy-to-use drafting tools.</li>
+                            <li><b>Engagement Drivers</b>: Community interaction, such as forums and leaderboards, were highlighted as key drivers of engagement. Users enjoy comparing their performance with others and discussing strategies.</li>
+                            <li><b>Usability Challenges</b>: Many users cited difficulties with navigating existing fantasy platforms, particularly in drafting players and accessing help sections. This feedback guided our design improvements.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="/Portfolio/depaul/imgs/HCI594/depaul_usersurveychart.webp" class="img-fluid rounded carousel-border" alt="A list of survey questions">
+                        <p>User Knowledge of Esports and Betting Experience</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg-6">
+                        <h3>Expert User Interviews</h3>
+                        <p>Interviews with experienced League of Legends players and fantasy sports enthusiasts provided deep insights into user behaviors, frustrations, and expectations. Key insights include:</p>
+                        <ul class="regular">
+                            <li><b>Importance of Community</b>: Expert users emphasized the value of community engagement, such as live chats during matches and forums for discussion. These features help create a more immersive experience.</li>
+                            <li><b>Competitive Features</b>: Advanced users seek features that enhance the competitive aspect of fantasy esports, such as detailed player statistics, match previews, and strategic tips.</li>
+                            <li><b>User-Friendly Design</b>: Even expert users appreciate a user-friendly design that makes it easy to navigate and use the platform without frustration.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Heuristic Evaluation Insights</h3>
+                        <p>Our heuristic evaluation assessed CounterPick’s prototype against established usability heuristics. Key insights include:</p>
+                        <ul class="regular">
+                            <li><b>Navigation and Information Architecture</b>: Ensuring clear, consistent navigation and logical information architecture was critical. Users should be able to find what they need quickly and easily.</li>
+                            <li><b>Error Handling</b>: Providing helpful error messages and guiding users on how to resolve issues enhances user satisfaction. For example, clear prompts during the drafting process help users avoid common mistakes.</li>
+                            <li><b>Visual Design and Consistency</b>: Maintaining a consistent visual design across the platform ensures users know where they are and what to expect. This consistency helps build trust and confidence in using the platform.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <h2>Prototyping</h2>
+                    <h3>Low-Fidelity Prototype</h3>
+                    <div class="col-lg d-flex justify-content-center mt-3">
+                        <div id="lowfiCarousel" class="carousel slide w-75">
+                            <div class="carousel-indicators w-25">
+                                <button type="button" data-bs-target="#lowfiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#lowfiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#lowfiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#lowfiCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#lowfiCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner carousel-border">
+                                <div class="carousel-item active">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/low-dashboard-1.webp" class="img-fluid rounded" alt="Low-fi prototype screenshot of CounterPick's dashboard">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/low-draftroom-2.1.webp" class="img-fluid rounded" alt="Low-fi prototype screenshot of CounterPick's draftroom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/low-draftroom-2.2.webp" class="img-fluid rounded" alt="Low-fi prototype screenshot of CounterPick's draftroom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/low-players-3.1.webp" class="img-fluid rounded" alt="Low-fi prototype screenshot of CounterPick's player page">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/low-playercard-3.2.webp" class="img-fluid rounded" alt="Low-fi prototype screenshot of CounterPick's player card">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lowfiCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lowfiCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5">Mid-Fidelity Prototype</h3>
+                    <div id="midfiCarousel" class="carousel slide w-75 mt-3">
+                        <div class="carousel-indicators w-25">
+                            <button type="button" data-bs-target="#midfiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#midfiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#midfiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#midfiCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#midfiCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner carousel-border">
+                            <div class="carousel-item active">
+                                <img src="/Portfolio/depaul/imgs/HCI594/mid-dashboard-1.webp" class="img-fluid rounded" alt="Mid-fi prototype screenshot of CounterPick's dashboard">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Portfolio/depaul/imgs/HCI594/mid-draftroom-2.1.webp" class="img-fluid rounded" alt="Mid-fi prototype screenshot of CounterPick's draftroom">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Portfolio/depaul/imgs/HCI594/mid-draftroom-2.2.webp" class="img-fluid rounded" alt="Mid-fi prototype screenshot of CounterPick's draftroom">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Portfolio/depaul/imgs/HCI594/mid-players-3.1.webp" class="img-fluid rounded" alt="Mid-fi prototype screenshot of CounterPick's player page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/Portfolio/depaul/imgs/HCI594/mid-playerscard-3.2.webp" class="img-fluid rounded" alt="Mid-fi prototype screenshot of CounterPick's player card">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#midfiCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#midfiCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <h2>Usability Testing Results</h2>
+                    <p>Usability testing of CounterPick's mid-fidelity prototype involved both novice and expert users to identify usability issues and gather feedback. Key findings and improvements include:</p>
+
+                    <div class="col-lg-6">
+                        <h3>Drafting Players</h3>
+                        <h4>Findings</h4>
+                        <ul class="regular">
+                            <li><b>Novice Users</b>: Found drafting confusing due to unfamiliar player roles.</li>
+                            <li><b>Expert Users</b>: Wanted more detailed information and options.</li>
+                        </ul>
+                        <h4>Improvements</h4>
+                        <ul class="regular">
+                            <li><b>Simplified Process</b>: Step-by-step instructions guide users through drafting.</li>
+                            <li><b>Tooltips and Tutorials</b>: Interactive guidance for novices.</li>
+                            <li><b>Advanced Filters and Analytics</b>: Enhanced options for experts.</li>
+                        </ul>
+
+                        <h3>Interactive Elements</h3>
+                        <h4>Findings</h4>
+                        <ul class="regular">
+                            <li><b>Engagement</b>: Users liked interactive features like live stats and comparisons.</li>
+                            <li><b>Complexity</b>: Some found these features overwhelming.</li>
+                        </ul>
+                        <h4>Improvements</h4>
+                        <ul class="regular">
+                            <li><b>User Interface Design</b>: Made interactive elements more intuitive.</li>
+                            <li><b>Personalization Options</b>: Users can customize their dashboard.</li>
+                            <li><b>Performance Optimization</b>: Enhanced backend for smoother updates.</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h3>Community Features</h3>
+                        <h4>Findings</h4>
+                        <ul class="regular">
+                            <li><b>Interaction and Engagement</b>: Valued forums, live chats, and leaderboards.</li>
+                            <li><b>Usability Issues</b>: Difficulties accessing community features.</li>
+                        </ul>
+                        <h4>Improvements</h4>
+                        <ul class="regular">
+                            <li><b>Enhanced Forums and Live Chats</b>: Improved design and integration.</li>
+                            <li><b>Leaderboard Customization</b>: Customizable metrics for different user groups.</li>
+                            <li><b>User Moderation Tools</b>: Tools for reporting inappropriate behavior.</li>
+                        </ul>
+
+                        <h3>Overall User Experience</h3>
+                        <h4>Findings</h4>
+                        <ul class="regular">
+                            <li><b>Satisfaction Levels</b>: High satisfaction with a blend of simplicity and depth.</li>
+                            <li><b>Areas for Improvement</b>: Clearer onboarding and more detailed player statistics.</li>
+                        </ul>
+                        <h4>Improvements</h4>
+                        <ul class="regular">
+                            <li><b>Streamlined Onboarding</b>: Guided tour of key features.</li>
+                            <li><b>Enhanced Player Statistics</b>: More granular data and visualizations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Final Frames -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <h2>Final Prototype</h2>
+                    <div class="col-lg d-flex justify-content-center mt-3">
+                        <div id="hifiCarousel" class="carousel slide w-75">
+                            <div class="carousel-indicators w-25">
+                                <button type="button" data-bs-target="#hifiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#hifiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#hifiCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#hifiCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#hifiCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner carousel-border">
+                                <div class="carousel-item active">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/final-dashboard-1.webp" class="img-fluid rounded" alt="Hi-fi prototype screenshot of CounterPick's dashboard">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/final-draftroom-2.1.webp" class="img-fluid rounded" alt="Hi-fi prototype screenshot of CounterPick's draftroom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/final-draftroom-2.2.webp" class="img-fluid rounded" alt="Hi-fi prototype screenshot of CounterPick's draftroom">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/final-players-3.1.webp" class="img-fluid rounded" alt="Hi-fi prototype screenshot of CounterPick's player page">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/Portfolio/depaul/imgs/HCI594/final-playerscard-3.2.webp" class="img-fluid rounded" alt="Hi-fi prototype screenshot of CounterPick's player card">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hifiCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#hifiCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Conclusion</h2>
+                        <p>CounterPick represents a forward-thinking approach to fantasy esports platforms, designed to reinvigorate fan engagement in the LCS community. By prioritizing user feedback, iterative design, and innovative features, CounterPick aims to set a new standard in fantasy esports interaction, enhancing user immersion and satisfaction.</p>
+
+                        <p>Thank you for checking out my study, check the top of the page for the link to the full report, or the presentation slides below!</p>
+                    </div>
+                </div>
+
+                <!-- Slideshow -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <h2>Slideshow Presentation</h2>
+                    <div class="col-lg">
+                        <iframe class="ratio ratio-4x3 vh-100 carousel-border rounded" src="/Portfolio/depaul/imgs/HCI594/GGG_FinalPresentation.pdf"></iframe>
+                    </div>
+                </div>
+
+                <!-- References -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>References</h2>
+                        <ol>
+                            <li>
+                                Beyond LCS Spring Split’s Record Low Viewership. The Esports Advocate. Retrieved January 19, 2024 from <a href="https://esportsadvocate.net/2023/04/lcs-viewership-shikenso/">https://esportsadvocate.net/2023/04/lcs-viewership-shikenso/</a>
+                            </li>
+                            <li>
+                                Esports Charts Team. (2023, November 19). Faker claims 4th World Championship title at the most popular esports event ever. Esports Charts. <a href="https://escharts.com/news/worlds-2023-recap">https://escharts.com/news/worlds-2023-recap</a>
+                            </li>
+                            <li>
+                                Farquhar, L. K., & Meeds, R. (2007). Types of fantasy sports users and their motivations. Journal of computer-mediated communication, 12(4), 1208-1228. <a href="https://doi.org/10.1111/j.1083-6101.2007.00370.x">https://doi.org/10.1111/j.1083-6101.2007.00370.x</a>
+                            </li>
+                            <li>
+                                LCS Summer 2022 / Statistics. Esports Charts. Retrieved January 20, 2024 from <a href="https://escharts.com/tournaments/lol/lcs-summer-2022">https://escharts.com/tournaments/lol/lcs-summer-2022</a>
+                            </li>
+                            <li>
+                                LCS Summer 2023 / Statistics. Esports Charts. Retrieved January 20, 2024 from <a href="https://escharts.com/tournaments/lol/lcs-summer-2023-lol">https://escharts.com/tournaments/lol/lcs-summer-2023-lol</a>
+                            </li>
+                            <li>
+                                LoL Esports Staff. (2022, December 15). 2023 LCS SCHEDULE UPDATES. Riot Games. Retrieved from <a href="https://lolesports.com/article/2023-lcs-schedule-updates/blt02f4c2dd90bf7cb6">https://lolesports.com/article/2023-lcs-schedule-updates/blt02f4c2dd90bf7cb6</a>
+                            </li>
+                            <li>
+                                Marney, J. (2023, May 22). What is League of Legends? Inside LoL’s 100M+ Playerbase. Esports. <a href="https://esports.gg/news/league-of-legends/what-is-league-of-legends-inside-lols-100-mplayerbase/">https://esports.gg/news/league-of-legends/what-is-league-of-legends-inside-lols-100-mplayerbase/</a>
+                            </li>
+                            <li>
+                                Pierotti, D., & Nielsen, J. (2021, January 20). Nielsen/Xerox 13 usability heuristics. UX heuristics. <a href="https://uxheuristics.net/heuristics/nielsenxerox-13-usability-heuristics">https://uxheuristics.net/heuristics/nielsenxerox-13-usability-heuristics</a>
+                            </li>
+                            <li>
+                                Ploeg, A. J. (2017). Going global: Fantasy sports gameplay paradigms, fan identities and cultural implications in an international context. European Journal of Cultural Studies, 20(6), 724-743. <a href="https://doi.org/10.1177/1367549417732995">https://doi.org/10.1177/1367549417732995</a>
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+
             </div>
 
             <hr/>
