@@ -19,6 +19,8 @@
     --alternate-pink: #FFADBF;
     --alternate-green: #00E07F;
     --alternate-yellow: #E6CB00;
+    --alternate-orange: #FF9B29;
+    --alternate-blue: #BCCEF5;
     --alternate-beige: #FFF3E5;
     /* Grayscale */
     --grayscale-0: #FFFFFF;
@@ -151,11 +153,122 @@ body {
 /* Cards */
 .card {
     background-color: var(--primary-purple);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.card-dp {
+    background-color: var(--primary-blue);
+}
+
+.card-wb {
+    background-color: var(--alternate-yellow);
+}
+
+.card-3data {
+    background-color: var(--alternate-green);
+}
+
+.card-dailyui {
+    background-color: var(--alternate-blue);
+}
+
+.card-bb {
+    background-color: var(--alternate-orange);
 }
 
 .card:hover {
     transform: scale(1.02);
     transition: transform .5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 100px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+    color: var(--secondary-purple);
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--secondary-purple);
+}
+
+/* Responsive behavior for 992px - 1200px (around 1100px) */
+@media (max-width: 1200px) and (min-width: 992px) {
+    .card {
+        height: 250px; /* Slightly reduce card height for this range */
+    }
+
+    .card-image {
+        flex: 0 0 35%; /* Reduce image size to give more room for text */
+    }
+
+    .card-content {
+        padding: 15px; /* Reduce padding for better fit */
+    }
+
+    .card-content h3 {
+        font-size: 1.4rem; /* Slightly smaller header */
+    }
+
+    .card-content p {
+        font-size: 0.95rem; /* Slightly smaller sub-header */
+    }
+}
+
+/* Responsive behavior for mobile (small screens) */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack image and text vertically */
+        height: auto; /* Let the card height adjust naturally */
+    }
+
+    .card-image {
+        flex: 0 0 auto; /* Let the image size adjust based on its content */
+        width: 100%; /* Full width for the image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .card-image img {
+        width: 100%; /* Image will stretch to fill the container's width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: contain; /* Ensure the entire image fits in the container */
+    }
+
+    .card-content {
+        padding: 15px;
+    }
 }
 
 .border-5 {
