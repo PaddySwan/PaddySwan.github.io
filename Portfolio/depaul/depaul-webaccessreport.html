@@ -99,26 +99,210 @@
                 <div class="container">
                     <div class="row gx-5 justify-content-evenly">
                         <div class="col-lg-6">
-                            <h2>Overview</h2>
-                            <p>Lorem</p>
+                            <h2>Executive Summary</h2>
+                            <p>
+                                Universal Robots (UR) is a pioneer in collaborative robots, known for its user-friendly automation solutions. The company caters primarily to industrial automation companies. A comprehensive assessment uncovered many accessibility flaws, most notably regarding text alternatives, proper labeling, form accessibility, and their website structure. Methods to uncover these flaws includes W3C’s “Easy Checks”, a cognitive level test, automated evaluations (using WAVE and Google Lighthouse), and a personal screen reader (NVDA) experience. UR should prioritize offering thorough alt-text, descriptive labels, keyboard accessibility, and error identification to improve accessibility on their forms and website. Ensuring a smooth and accessible browsing experience for people with disabilities also requires improvements in the use of ARIA, color contrast, and general content readability.</p>
                         </div>
                         <div class="col-lg-6">
-                            <h3 class="sub-light">Role</h3>
-                            <p>Lorem</p>
+                            <div class="row">
+                                <h3 class="sub-light">Tasks</h3>
+                                <ul class="regular">
+                                    <li><b>Audit</b>: Conducted a website accessibility audit using industry standards</li>
+                                    <li><b>Analysis</b>: Identified areas for improvement in content and design for better accessibility</li>
+                                    <li><b>Recommendations</b>: Provided suggestions to enhance usability and compliance with accessibility guidelines</li>
+                                    <li><b>Documentation</b>: Documented findings and suggested actionable steps for the design team</li>
+                                </ul>
+                            </div>
+                            <div class="row pt-4">
+                                <a href="/Portfolio/depaul/imgs/HCI511/Swanson_WebAccessReport_HCI511.pdf" class="btn w-50" target="_blank">View Report</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="container mt-5">
+                <!-- Intro -->
                 <div class="row gx-5 justify-content-evenly align-items-center">
                     <div class="col-lg-7">
-                        Lorem
+                        <h2>Introduction</h2>
+                        <p>Universal Robots (UR) is one of the global leaders in collaborative robots (cobots). In addition to their cobots, UR has developed some of the most advanced automation solutions available. BMW, along with other leading companies, has recognized UR for their user-friendly and flexible design, integrating them into production processes to improve efficiency and safety (BMW Group, 2013). Any further investigation into UR and their motivations as a company shows that they are committed to be reliable and innovative in both the automation and robotics field. </p>
                     </div>
                     <div class="col-lg-5 text-center">
-                        Lorem
+                        <img
+                             src="/Portfolio/depaul/imgs/HCI511/Universal_Robots_Logo.webp"
+                             class="shadow-1-strong rounded img-fluid carousel-border"
+                             alt="Universal Robots logo"
+                             />
+                        <p id="caption">https://www.mhi.org/members/75525</p>
                     </div>
                 </div>
+
+                <!-- Services and Audience -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h3>Services</h3>
+                        <p>We recruited three visually impaired participants through personal networks, ensuring they were at least 18 years old. The study was conducted virtually using Zoom, with participants performing tasks related to browsing, adding items to their cart, checking out, and reviewing orders. Data was collected through recordings, notes, and affinity diagrams to identify patterns and themes.</p>
+                    </div>
+                    <div class="col-lg">
+                        <h3>Audience</h3>
+                        <p>UR appears to target enterprises in the industrial automation field, looking to optimize their production without investing too heavily into robotics. While you might find large factories using UR’s cobots, a few applications use smaller scale cobots in an office setting. It also seems that UR is interested in emerging applications as the desire for automation grows into new fields.</p>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Methods and Tools</h2>
+                        <p>For this assessment, I reviewed both the Universal Robots homepage and the product page for their UR10e cobot, see the Appendix for current screenshots. I have done my assessment in Google Chrome as of October 2023. For the accessibility evaluation, I followed and used the guidelines and tools below:</p>
+                        <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                            <div class="col-lg">
+                                <h3>W3C "Easy Checks"</h3>
+                                <p>The first list I used comes from W3C with <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">“Easy Checks” – A First Review of Web Accessibility</a>. These are preliminary checks that all websites should consider before publishing their website.</p>
+                            </div>
+                            <div class="col-lg">
+                                <h3>Readability Level (Cognitive Level Test)</h3>
+                                <p>All text assessment for this method involved the usage of <a href="https://readable.com/">Readable</a>. This method involves copying and pasting text found on UR’s website to make sure it is at an 8th grade reading level or below.</p>
+                            </div>
+                        </div>
+                        <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                            <div class="col-lg">
+                                <h3>Automated Evaluations (WAVE and Google Lighthouse)</h3>
+                                <p>For the automated tools, I used the <a href="https://wave.webaim.org/">WAVE</a> Google Chrome extension and Google’s built-in tool, <a href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a>, to evaluate UR’s website against the <a href="https://webaim.org/standards/wcag/checklist">POUR guidelines</a>.</p>
+                            </div>
+                            <div class="col-lg">
+                                <h3>ARIA Assessment</h3>
+                                <p>I used <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd/related">Axe DevTools</a> to identify if the website’s usage of ARIA is correct in addition to WAVE and Google Lighthouse. However, I also manually checked it using Google Chrome’s “View Source” functionality to view their code. I referenced Mozilla’s documentation on ARIA to ensure that their usage is correct and consistent with the standards.</p>
+                            </div>
+                        </div>
+                        <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                            <div class="col-lg">
+                                <h3>Screen Reader Experience</h3>
+                                <p>To check how a screen reader functions on the UR website, I used the popular reader, <a href="https://www.nvaccess.org/">NVDA</a>. This is a personal experience rather than a true evaluation. By attempting to use their website with a screen reader, I can determine if a screen reader user would be able to access the website effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Findings</h2>
+                        <p>The following section organizes discoveries according to the POUR guidelines (Perceivable, Operable, Understandable, Robust). This includes findings from the “Easy Checks” process, the ARIA assessment, readability level, and the automated evaluations.</p>
+                    </div>
+
+                    <table class="table carousel-border rounded">
+                        <thead>
+                            <tr>
+                                <th>Principle</th>
+                                <th>Guideline</th>
+                                <th>Issue</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Perceivable</td>
+                                <td>1.1 Text Alternatives</td>
+                                <td>1.1.1 Non-text Content</td>
+                                <td>This is a major issue across both pages. The website uses "alt" tags as labels but they don't describe the images, leading to poor screen reader support. 13 buttons on the homepage and 6 on the product page lack alternate text. Labels are also missing on form inputs.</td>
+                            </tr>
+                            <tr>
+                                <td>1.2 Time-based Media</td>
+                                <td></td>
+                                <td>Pre-recorded videos lack transcripts and captions. No sign language video is available either.</td>
+                            </tr>
+                            <tr>
+                                <td>1.3 Adaptable</td>
+                                <td>1.3.1 Info and Relationships</td>
+                                <td>The website uses proper headers, but the order and hierarchy are inconsistent. Some headers skip levels, and form inputs lack labels.</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Operable</td>
+                                <td>2.1 Keyboard Accessible</td>
+                                <td>2.1.1 Keyboard</td>
+                                <td>Drop-down input boxes on the "Request a quote" form are not keyboard accessible.</td>
+                            </tr>
+                            <tr>
+                                <td>2.4 Navigable</td>
+                                <td>2.4.1 Bypass Blocks</td>
+                                <td>The website lacks an option to skip over the repeated navigation menu, which is essential for accessibility.</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">Understandable</td>
+                                <td>3.1 Readable</td>
+                                <td>3.1.4 Abbreviations</td>
+                                <td>There are multiple abbreviations across the site without the use of the <abbr> tag for clarity.</td>
+                            </tr>
+                            <tr>
+                                <td>3.3 Input Assistance</td>
+                                <td>3.3.1 Error Identification</td>
+                                <td>The "Request a quote" form identifies errors but does not provide supporting text explaining what went wrong.</td>
+                            </tr>
+                            <tr>
+                                <td>3.3 Input Assistance</td>
+                                <td>3.3.2 Labels or Instructions</td>
+                                <td>Form labels are not properly associated with fields, and screen readers report them as "blank".</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Robust</td>
+                                <td>4.1 Compatible</td>
+                                <td>4.1.2 Name, Role, Value</td>
+                                <td>ARIA attributes use invalid terms for the search bar pop-up, and the "play" button lacks an accessible name.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="col-lg">
+                        <h3>Screen Reader Experience</h3>
+                        <p>While the website’s accuracy surprised me, there were still moments in which the screen reader seemingly ignored large sections of the webpages. The heading structure provided an easy way to get to major sections of information, but as a sighted user, I could see some sections ignored by the reader. Related to the ARIA errors, the “play” button over the videos came up quickly and only announced itself as “clickable button”. For someone who is not able to see what that button is for, you must take a risk to click a button that has no label, and you must trust the website is not taking advantage of you. On top of some small inconsistencies and mislabeling, there is work for UR to do. Overall, I believe someone who is blind or has low vision would be able to navigate these webpages, but they may be concerned/confused.</p>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>Recommendations (Abbr.)</h2>
+                        <ul class="regular">
+                            <li>Ensure all images have unique, descriptive alt-text.</li>
+                            <li>Provide accessible labels for all buttons and form fields.</li>
+                            <li>Enable autocomplete on forms for common information (name, email).</li>
+                            <li>Make drop-downs on the "Request a quote" form keyboard accessible.</li>
+                            <li>Provide clear error messages and suggestions for form inputs.</li>
+                            <li>Add captions and descriptive transcripts to videos.</li>
+                            <li>Use a logical heading structure (avoid skipping heading levels).</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg">
+                        <br>
+                        <ul class="regular">
+                            <li>Use a logical heading structure (avoid skipping heading levels).</li>
+                            <li>Fix ARIA issues (e.g., search bar and "play" button).</li>
+                            <li>Improve color contrast for links in the footer.</li>
+                            <li>Avoid seizure-inducing visuals in video transitions.</li>
+                            <li>Add an option to skip the navigation menu.</li>
+                            <li>Use an 8th-grade reading level for website text.</li>
+                            <li>Use the <code>&lt;abbr&gt;</code> tag for abbreviations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gx-5 justify-content-evenly align-items-center mt-5">
+                    <div class="col-lg">
+                        <h2>References</h2>
+                        <ol>
+                            <li>
+                                BMW Group. (2013, September 10). Innovative human-robot cooperation in BMW Group production. Retrieved from BMW Group Press: <a href="https://www.press.bmwgroup.com/global/article/detail/T0209722EN/innovative-human-robot-cooperation-in-bmw-group-production?language=en">https://www.press.bmwgroup.com/global/article/detail/T0209722EN/innovative-human-robot-cooperation-in-bmw-group-production?language=en</a>
+                            </li>
+                            <li>
+                                Universal Robots A/S. (2023, October). Retrieved from Universal Robots: <a href="https://www.universal-robots.com/">https://www.universal-robots.com/</a>
+                            </li>
+                            <li>
+                                Universal Robots A/S. (2023, October). UR10e. Retrieved from Universal Robots: <a href="https://www.universal-robots.com/products/ur10e/">https://www.universal-robots.com/products/ur10e/</a>
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+
             </div>
 
             <hr/>

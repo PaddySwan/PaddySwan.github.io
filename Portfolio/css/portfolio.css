@@ -523,6 +523,10 @@ p {
     color: var(--secondary-blue);
 }
 
+.highlighted2 {
+    color: var(--alternate-magenta);
+}
+
 .highlighted-name {
     color: var(--secondary-blue);
 }
