@@ -8,3 +8,6 @@ desktop.ini
 # Editor
 .vscode/
 .idea/
+
+# AI assistant working notes (internal dev conventions, not public site content)
+CLAUDE.md
