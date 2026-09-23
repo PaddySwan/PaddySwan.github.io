@@ -37,6 +37,25 @@ body {
     --bs-body-bg: var(--alternate-beige);
 }
 
+/* Skip to content link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 1050;
+    padding: .75rem 1.25rem;
+    background-color: var(--primary-purple);
+    color: var(--grayscale-100);
+    text-decoration: none;
+    border-radius: 0 0 8px 0;
+    transition: top .2s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 0;
+    color: var(--grayscale-100);
+}
+
 /* Navbar */
 .navbar-bg {
     background-color: var(--alternate-beige);
