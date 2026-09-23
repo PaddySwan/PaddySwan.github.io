@@ -19,9 +19,11 @@
     --alternate-pink: #FFADBF;
     --alternate-green: #00E07F;
     --alternate-yellow: #E6CB00;
+    --alternate-lime: #D6F24C;
     --alternate-orange: #FF9B29;
     --alternate-blue: #BCCEF5;
     --alternate-beige: #FFF3E5;
+    --alternate-green_trans: rgba(0, 224, 127, 0.5);
     /* Grayscale */
     --grayscale-0: #FFFFFF;
     --grayscale-100: #FDFDFD;
@@ -59,6 +61,22 @@ body {
 /* Navbar */
 .navbar-bg {
     background-color: var(--alternate-beige);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: box-shadow .2s ease;
+}
+
+.navbar-bg.scrolled {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+}
+
+/* Reserve space for the now-fixed navbar so page content doesn't jump underneath it */
+main {
+    display: block;
+    padding-top: 92px;
 }
 
 .navbar-toggler-light {
@@ -112,6 +130,7 @@ body {
 }
 
 .btn-nav {
+    position: relative;
     padding: .25rem .5rem;
     font-weight: 600;
     color: var(--primary-purple);
@@ -122,9 +141,37 @@ body {
     background-color: var(--alternate-magenta);
 }
 
+.btn-nav.active {
+    color: var(--alternate-magenta);
+}
+
+.btn-nav.active::after {
+    content: "";
+    position: absolute;
+    left: .5rem;
+    right: .5rem;
+    bottom: -2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--alternate-magenta);
+}
+
 /* Section */
 .section {
     background-color: var(--primary-purple);
+}
+
+/* Softer variant for the homepage intro card, which sits between the light
+   hero and the (now pastel) work cards rather than opening the page like
+   .section does everywhere else. Scoped overrides below keep text legible
+   since .offwhite/.light/.underline-1/2/3 were designed for the dark bg. */
+/* Homepage intro text sits directly on the page background (no boxed
+   .section treatment) — these override .offwhite/.light/.underline-1/2/3,
+   which were designed for the dark .section background used everywhere else. */
+.intro-text {
+    background-color: var(--primary-purple);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
 }
 
 /* Image height for large screens */
@@ -176,22 +223,26 @@ body {
     flex-direction: row;
     text-decoration: none;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
     margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
     transition: box-shadow 0.3s;
 }
 
 .card-dp {
     background-color: var(--primary-blue);
+    background-color: color-mix(in srgb, var(--primary-blue) 35%, white);
 }
 
 .card-wb {
     background-color: var(--alternate-yellow);
+    background-color: color-mix(in srgb, var(--alternate-yellow) 35%, white);
 }
 
 .card-3data {
     background-color: var(--alternate-green);
+    background-color: color-mix(in srgb, var(--alternate-green) 35%, white);
 }
 
 .card-dailyui {
@@ -200,12 +251,46 @@ body {
 
 .card-bb {
     background-color: var(--alternate-orange);
+    background-color: color-mix(in srgb, var(--alternate-orange) 35%, white);
+}
+
+.card-polyai {
+    background-color: var(--alternate-lime);
+    background-color: color-mix(in srgb, var(--alternate-lime) 35%, white);
+}
+
+.card-polyai .coming-soon-badge {
+    background-color: var(--grayscale-1000);
+    color: var(--grayscale-100);
+}
+
+/* Placeholder cards for projects that aren't built out yet: no hover
+   affordance, since there's nowhere to click through to. */
+.card-disabled {
+    cursor: default;
+}
+
+.card.card-disabled:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.coming-soon-badge {
+    display: inline-block;
+    padding: .3rem .8rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .08);
+    color: var(--secondary-purple);
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
 }
 
 .card:hover {
     transform: scale(1.02);
-    transition: transform .5s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform .5s, box-shadow .3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1), 0 16px 32px rgba(0, 0, 0, .12);
 }
 
 .card-image {
@@ -298,6 +383,12 @@ body {
     color: var(--secondary-purple);
     background-color: var(--grayscale-100);
     border-color: var(--secondary-purple);
+    border-radius: 12px;
+}
+
+/* Soft layered shadow (replaces Bootstrap's flat .shadow-lg on hero/photo elements) */
+.shadow-soft {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08), 0 12px 32px rgba(0, 0, 0, .1);
 }
 
 .btn:hover {
@@ -387,11 +478,28 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
     background-color: var(--primary-purple);
     color: var(--grayscale-100);
     border-color: var(--secondary-purple);
-    z-index: 10;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08), 0 12px 32px rgba(0, 0, 0, .12);
+    z-index: 1020;
+    opacity: 0;
+    transform: translateY(12px) scale(.9);
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease, background-color .2s ease;
+}
+
+#btn-back-to-top.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
 }
 
 #btn-back-to-top:hover {
@@ -510,6 +618,21 @@ p {
     color: var(--grayscale-900);
 }
 
+.hyperlink,
+.hyperlink2 {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .25s ease;
+}
+
+.hyperlink:hover,
+.hyperlink2:hover {
+    background-size: 100% 2px;
+}
+
 .hyperlink {
     color: var(--alternate-magenta);
 }
@@ -618,3 +741,75 @@ h3 {font-size: 1.953rem;}
 h4 {font-size: 1.563rem;}
 
 h5 {font-size: 1.25rem;}
+
+/* Scroll progress bar */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--tertiary-blue), var(--secondary-blue), var(--primary-blue));
+    z-index: 1100;
+    transition: width .1s linear;
+}
+
+/* Hero name/role */
+.hero-role {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--primary-purple);
+}
+
+/* Status pill: same chip language as the .underline-1/2/3 hover states
+   (tinted color background, rounded corners, dark text) rather than a
+   generic white-pill-with-dot component. */
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, var(--alternate-green) 20%, white);
+    font-size: .85rem;
+    font-weight: 700;
+    color: var(--secondary-purple);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--alternate-green);
+    box-shadow: 0 0 0 0 var(--alternate-green_trans);
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+    0% { box-shadow: 0 0 0 0 var(--alternate-green_trans); }
+    70% { box-shadow: 0 0 0 6px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* Scroll-reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .6s ease-out, transform .6s ease-out;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

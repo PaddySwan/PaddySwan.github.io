@@ -11,9 +11,9 @@ function scrollFunction() {
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
   ) {
-    mybutton.style.display = "block";
+    mybutton.classList.add("show");
   } else {
-    mybutton.style.display = "none";
+    mybutton.classList.remove("show");
   }
 }
 // When the user clicks on the button, scroll to the top of the document
