@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Thanks for checking out my source code! Everything here is from scratch. I have some sections commented out across the site; that just means they're not ready yet, check back later! -->
+
+    <!-- DRAFT: local review only. Not linked from the homepage or projects page yet. -->
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-716F81YX2T"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-716F81YX2T');
+        </script>
+
+        <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/6a976fbeccab399bfa11c043/script.js"></script> <!-- End cookieyes banner -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
+        <title>PolyAI | Patrick Swanson</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+        <!-- Bootstrap Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- Portfolio Stylesheet -->
+        <link rel="stylesheet" href="/Portfolio/css/portfolio.css?v=2026-10-19">
+
+
+        <!-- Font Awesome Icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="scroll-progress" aria-hidden="true"></div>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <main>
+            <!-- Navbar -->
+            <div class="container">
+                <div class="row navbar-bg px-3">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <div class="container border-bottom">
+                            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
+                                <span class="navbar-toggler-icon navbar-toggler-icon-light"></span>
+                            </button>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-block d-none">
+                                <img class="d-lg-block d-none home" src="/Portfolio/img/logo/SwansonLogo_Full_v1.png" style="width: 250px;" alt="Origami swan with the name Patrick Swanson next to it">
+                            </a>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-none d-md mx-auto justify-content-center">
+                                <img class="" src="/Portfolio/img/logo/SwansonLogo_Swan250_v2.png" style="width: 75px;" alt="Origami swan">
+                            </a>
+                            <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+                                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/portfolio.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/about-me.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/resume/Swanson_Resume.pdf?v=2026-10-19" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <button
+                    type="button"
+                    class="btn btn-lg"
+                    id="btn-back-to-top"
+                    aria-label="Return to top of page"
+                    >
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+            <!-- Main Body -->
+            <div id="main-content" class="section p-4 mt-3 justify-content-center">
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-6 align-self-center">
+                            <h1 class="light text-center m-1">PolyAI</h1>
+                            <p class="light">Agent Designer, building voice AI agents for customer service</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Example call (invented, not a real transcript) -->
+                            <svg viewBox="0 0 520 330" role="img" aria-labelledby="heroTitle heroDesc" xmlns="http://www.w3.org/2000/svg">
+                                <title id="heroTitle">Example phone call between a caller and a voice AI agent</title>
+                                <desc id="heroDesc">The agent, Chelsea, greets the caller and asks how she can help. The caller asks to reschedule an appointment. The agent asks for the caller's date of birth.</desc>
+                                <rect x="10" y="10" width="500" height="310" rx="18" fill="#2B2126" stroke="#06DCF5" stroke-width="2"/>
+                                <circle cx="40" cy="42" r="6" fill="#00E07F"/>
+                                <text x="56" y="47" class="svg-t-light">Inbound call</text>
+                                <g stroke="#06DCF5" stroke-width="3" stroke-linecap="round">
+                                    <line x1="380" y1="42" x2="380" y2="42"/><line x1="392" y1="34" x2="392" y2="50"/><line x1="404" y1="28" x2="404" y2="56"/><line x1="416" y1="36" x2="416" y2="48"/><line x1="428" y1="24" x2="428" y2="60"/><line x1="440" y1="34" x2="440" y2="50"/><line x1="452" y1="38" x2="452" y2="46"/><line x1="464" y1="42" x2="464" y2="42"/>
+                                </g>
+                                <rect x="30" y="80" width="400" height="56" rx="14" fill="#BCCEF5"/>
+                                <text x="46" y="104" class="svg-t-sm svg-b">Agent</text>
+                                <text x="46" y="124" class="svg-t">Hi, this is Chelsea. How can I help you today?</text>
+                                <rect x="170" y="150" width="320" height="56" rx="14" fill="#D6F24C"/>
+                                <text x="186" y="174" class="svg-t-sm svg-b">Caller</text>
+                                <text x="186" y="194" class="svg-t">I need to reschedule my appointment.</text>
+                                <rect x="30" y="220" width="400" height="56" rx="14" fill="#BCCEF5"/>
+                                <text x="46" y="244" class="svg-t-sm svg-b">Agent</text>
+                                <text x="46" y="264" class="svg-t">No problem. Could I get your date of birth?</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content here -->
+            <div class="p-4 mt-3 justify-content-center">
+
+                <!-- Overview -->
+                <div class="container">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Overview</h2>
+                            <p>PolyAI builds enterprise voice and chat agents that handle customer calls for companies across many industries, from restaurants to retail to healthcare. Picture a typical pharmacy phone menu: "press 1 for refills, press 2 for..." PolyAI's agents let you simply say what you need and get it handled, without a long wait for a person.</p>
+                            <p>I worked mostly on healthcare projects, where calls are about scheduling, refills, and getting questions answered. Client details are confidential, so this page follows the story of my time there: the problems I worked on, how I approached them, and what changed.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="sub-light">Role</h3>
+                            <p><b>Agent Designer</b> <br> April 2025 to September 2026 · Full-time, remote <br> (the title changed from Dialogue Designer in December 2025)</p>
+                            <h3 class="sub-light">What I did</h3>
+                            <p>Defined how agents behave, built the flows for what clients needed, solved edge cases, shaped the agent's voice, and kept improving agents after launch.</p>
+                            <h3 class="sub-light">Team</h3>
+                            <p>Each project paired me with a Forward-Deployed Engineer and a Deployment Strategist (similar to a project manager), alongside colleagues around the world. Pods grouped related projects, and mine was healthcare.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What good looks like -->
+                <div class="container mt-5">
+                    <h2>What good looked like</h2>
+                    <p>Clients came to us to take pressure off their call centers, so some measures were simple. But a call can hit its numbers and still feel bad, so we cared about the experience too.</p>
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="pa-metric pa-metric-1">
+                                <h3>The numbers</h3>
+                                <ul>
+                                    <li><b>Containment:</b> the share of calls the agent handles start to finish without transferring to a human. If a client expects high containment and doesn't get it, the agent isn't doing its job.</li>
+                                    <li><b>Task success:</b> for calls the agent should be able to handle, how many end with the job done, such as an appointment booked, rescheduled, or cancelled.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pa-metric pa-metric-2">
+                                <h3>The experience</h3>
+                                <p>Callers should feel understood, not stuck in a loop or pushed away. Some clients put this above everything else. On one project, the client cared more about the overall experience than the success metrics. So I reviewed real calls not only for what failed, but for where a call felt awkward or frustrating.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How a call works -->
+                <div class="container mt-5">
+                    <h2>How a call is designed</h2>
+                    <p>Every call follows a similar shape: greet the caller, understand what they need, respond, and wrap up. Most of the design work happens in the details, such as what happens when a caller is vague, changes their mind, or wants a person. Specific capabilities then add their own steps. Booking, for example, needs the agent to identify and verify the caller (IDNV) to find their account, and then negotiate a time.</p>
+                    <figure class="pa-figure pa-panel">
+                        <div class="d-md-none">
+                            <svg viewBox="0 0 340 400" role="img" aria-labelledby="flowMTitle flowMDesc" xmlns="http://www.w3.org/2000/svg">
+                                <title id="flowMTitle">General call flow with booking as an example capability</title>
+                                <desc id="flowMDesc">Four steps run top to bottom: greet, identify and understand the request, respond, and wrap up. The respond step can answer more if needed. For booking calls, IDNV is added at the identify step, and slot negotiation is added at the respond step. A handoff to a human is available at any step.</desc>
+                                <defs>
+                                    <marker id="arrowM" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                                        <path d="M0,0 L10,5 L0,10 z" fill="#3F303B"/>
+                                    </marker>
+                                </defs>
+                                <g stroke="#3F303B" stroke-width="2" fill="none" marker-end="url(#arrowM)">
+                                    <line x1="105" y1="66" x2="105" y2="88"/>
+                                    <line x1="105" y1="146" x2="105" y2="168"/>
+                                    <line x1="105" y1="226" x2="105" y2="248"/>
+                                </g>
+                                <g stroke="#3F303B" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#arrowM)">
+                                    <line x1="200" y1="118" x2="222" y2="118"/>
+                                    <line x1="200" y1="198" x2="222" y2="198"/>
+                                </g>
+                                <rect x="10" y="10" width="190" height="56" rx="12" fill="#BCCEF5"/>
+                                <text x="105" y="34" text-anchor="middle" class="svg-t svg-b">Greet</text>
+                                <text x="105" y="54" text-anchor="middle" class="svg-t-sm">short and natural</text>
+                                <rect x="10" y="90" width="190" height="56" rx="12" fill="#FFADBF"/>
+                                <text x="105" y="114" text-anchor="middle" class="svg-t svg-b">Identify</text>
+                                <text x="105" y="134" text-anchor="middle" class="svg-t-sm">&amp; understand the request</text>
+                                <rect x="10" y="170" width="190" height="56" rx="12" fill="#D6F24C"/>
+                                <text x="105" y="194" text-anchor="middle" class="svg-t svg-b">Respond</text>
+                                <text x="105" y="214" text-anchor="middle" class="svg-t-sm">answer more if needed</text>
+                                <rect x="10" y="250" width="190" height="56" rx="12" fill="#00E07F"/>
+                                <text x="105" y="274" text-anchor="middle" class="svg-t svg-b">Wrap up</text>
+                                <text x="105" y="294" text-anchor="middle" class="svg-t-sm">confirm and close</text>
+                                <rect x="224" y="92" width="112" height="52" rx="12" fill="#FFF3E5" stroke="#3F303B" stroke-width="2"/>
+                                <text x="280" y="114" text-anchor="middle" class="svg-t-sm svg-b">Booking adds</text>
+                                <text x="280" y="132" text-anchor="middle" class="svg-t-sm">IDNV</text>
+                                <rect x="224" y="172" width="112" height="52" rx="12" fill="#FFF3E5" stroke="#3F303B" stroke-width="2"/>
+                                <text x="280" y="194" text-anchor="middle" class="svg-t-sm svg-b">Booking adds</text>
+                                <text x="280" y="212" text-anchor="middle" class="svg-t-sm">slot negotiation</text>
+                                <rect x="10" y="334" width="326" height="52" rx="12" fill="#FFF3E5" stroke="#AF0029" stroke-width="2"/>
+                                <text x="173" y="356" text-anchor="middle" class="svg-t-sm svg-b">Handoff to a human</text>
+                                <text x="173" y="374" text-anchor="middle" class="svg-t-sm">available at any step</text>
+                            </svg>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <svg viewBox="-3 0 766 240" role="img" aria-labelledby="flowTitle flowDesc" xmlns="http://www.w3.org/2000/svg">
+                                <title id="flowTitle">General call flow with booking as an example capability</title>
+                                <desc id="flowDesc">Four steps run left to right: greet, identify and understand the request, respond, and wrap up. The respond step can loop to answer more. For booking calls, IDNV is added at the identify step, and slot negotiation is added at the respond step. A handoff to a human is available at any step.</desc>
+                                <defs>
+                                    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                                        <path d="M0,0 L10,5 L0,10 z" fill="#3F303B"/>
+                                    </marker>
+                                </defs>
+                                <g stroke="#3F303B" stroke-width="2" fill="none" marker-end="url(#arrow)">
+                                    <line x1="160" y1="82" x2="198" y2="82"/>
+                                    <line x1="360" y1="82" x2="398" y2="82"/>
+                                    <line x1="560" y1="82" x2="598" y2="82"/>
+                                </g>
+                                <rect x="0" y="50" width="160" height="64" rx="12" fill="#BCCEF5"/>
+                                <text x="80" y="78" text-anchor="middle" class="svg-t svg-b">Greet</text>
+                                <text x="80" y="98" text-anchor="middle" class="svg-t-sm">short and natural</text>
+                                <rect x="200" y="50" width="160" height="64" rx="12" fill="#FFADBF"/>
+                                <text x="280" y="78" text-anchor="middle" class="svg-t svg-b">Identify</text>
+                                <text x="280" y="98" text-anchor="middle" class="svg-t-sm">&amp; understand the request</text>
+                                <rect x="400" y="50" width="160" height="64" rx="12" fill="#D6F24C"/>
+                                <text x="480" y="78" text-anchor="middle" class="svg-t svg-b">Respond</text>
+                                <text x="480" y="98" text-anchor="middle" class="svg-t-sm">answer more if needed</text>
+                                <rect x="600" y="50" width="160" height="64" rx="12" fill="#00E07F"/>
+                                <text x="680" y="78" text-anchor="middle" class="svg-t svg-b">Wrap up</text>
+                                <text x="680" y="98" text-anchor="middle" class="svg-t-sm">confirm and close</text>
+                                <!-- respond loop -->
+                                <path d="M530,50 C530,6 430,6 430,46" stroke="#3F303B" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#arrow)"/>
+                                <!-- booking additions -->
+                                <path d="M280,114 L280,160" stroke="#3F303B" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#arrow)"/>
+                                <path d="M480,114 L480,160" stroke="#3F303B" stroke-width="2" stroke-dasharray="6 5" fill="none" marker-end="url(#arrow)"/>
+                                <rect x="200" y="164" width="160" height="60" rx="12" fill="#FFF3E5" stroke="#3F303B" stroke-width="2"/>
+                                <text x="280" y="188" text-anchor="middle" class="svg-t-sm svg-b">Booking calls add</text>
+                                <text x="280" y="207" text-anchor="middle" class="svg-t-sm">IDNV</text>
+                                <rect x="400" y="164" width="160" height="60" rx="12" fill="#FFF3E5" stroke="#3F303B" stroke-width="2"/>
+                                <text x="480" y="188" text-anchor="middle" class="svg-t-sm svg-b">Booking calls add</text>
+                                <text x="480" y="207" text-anchor="middle" class="svg-t-sm">slot negotiation</text>
+                                <!-- handoff -->
+                                <rect x="600" y="164" width="160" height="60" rx="12" fill="#FFF3E5" stroke="#AF0029" stroke-width="2"/>
+                                <text x="680" y="188" text-anchor="middle" class="svg-t-sm svg-b">Handoff to a human</text>
+                                <text x="680" y="207" text-anchor="middle" class="svg-t-sm">available at any step</text>
+                            </svg>
+                        </div>
+                        <figcaption>The general shape of a call, with booking as one example of a capability that adds steps. I mapped flows like this in Lucidchart before building them.</figcaption>
+                    </figure>
+
+                    <figure class="pa-figure mt-4">
+                        <div class="pa-scroll pa-scroll-img"><img src="/Portfolio/polyai/imgs/agentstudio_flows.webp" class="img-fluid rounded pa-shot" alt="The flow builder in Agent Studio showing a booking flow with connected steps for collecting a date and time, a phone number, and confirming the booking" loading="lazy"></div>
+                        <figcaption>Then I built the flow in Agent Studio. <span class="d-md-none">Swipe to pan. </span>Image: <a class="hyperlink" href="https://docs.poly.ai/flows/introduction" target="_blank" rel="noopener">PolyAI</a></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Across every project -->
+                <div class="container mt-5">
+                    <h2>What I worked on across projects</h2>
+                    <p>These challenges showed up in every project I touched, so I worked on them everywhere.</p>
+
+                    <div class="row gx-5 justify-content-evenly align-items-start mt-4">
+                        <div class="col-lg-6">
+                            <h3>Earning the first few seconds</h3>
+                            <p>In a time of mistrust toward AI phone systems, the hardest problem was often the very start of a call. Some callers asked for a person right away, before the agent had said anything useful. I call this the first-turn "speak to" request, and it was the toughest handoff to reduce, since those callers never gave the agent a chance.</p>
+                            <p>There was no single fix, so I tested several ideas over time and across projects:</p>
+                            <ul class="regular">
+                                <li><b>A more convincing voice:</b> if callers don't realize it's automated, fewer ask for a person.</li>
+                                <li><b>A shorter introduction:</b> trimming it from roughly 15-20 seconds to around 10 made it feel natural to respond instead of waiting. Getting to the caller's problem sooner helped, and shaving time anywhere we could made a difference.</li>
+                                <li><b>Encouraging callers to speak freely:</b> some callers had been trained by rigid phone menus not to, so a light nudge to state their request worked better than another menu.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Example greetings</p>
+                                <div class="pa-script">
+                                    <span class="pa-chip">Long</span>
+                                    <p>"Thank you for calling [Clinic]. I'm an automated assistant who can help with scheduling, refills, and general questions. How may I assist you today?"</p>
+                                </div>
+                                <div class="pa-script">
+                                    <span class="pa-chip">Short</span>
+                                    <p>"Thanks for calling [Clinic]. This is Chelsea. How can I help you today?"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-5 justify-content-evenly align-items-start mt-5">
+                        <div class="col-lg-6 mb-lg-0 mb-5 order-lg-1 order-2">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Examples</p>
+                                <table class="pa-table">
+                                    <tr><th scope="col">Written</th><th scope="col">Spoken as</th></tr>
+                                    <tr><td>Metformin</td><td>"met-FOR-min"</td></tr>
+                                    <tr><td>555-0142</td><td>"five five five, oh one four two"</td></tr>
+                                    <tr><td>400 N Main St, Ste 2</td><td>"four hundred North Main Street, Suite two"</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1">
+                            <h3>The details that make a voice sound right</h3>
+                            <p>On voice projects, I worked with clients to choose the voice they wanted for their agent and tuned its settings to keep it stable. Then came the corrections that make an agent sound like a person instead of a machine. In healthcare these matter a lot: medication names, doctor names, office names, city names, and how numbers and addresses are read aloud.</p>
+                            <p>Mispronouncing a drug name or reading a phone number as one long figure breaks trust, so I treated pronunciation as part of the design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story: chapters -->
+                <div class="container mt-5">
+                    <h2>My time at PolyAI</h2>
+                    <p>My work grew over about a year and a half: from an existing project with a focused scope, to a larger and more complex one, to building new projects from scratch.</p>
+
+                    <!-- Chapter 1 -->
+                    <div class="row gx-5 justify-content-evenly align-items-center mt-4">
+                        <div class="col-lg-6">
+                            <h3>Learning the platform</h3>
+                            <p>After training on Agent Studio, PolyAI's platform for building agents (now called Dialog Studio), I took over an existing project with a focused scope. It was a good place to learn: FAQs, flows that give accurate information based on the caller's situation, and call reviews to improve the experience.</p>
+                            <p>The FAQ work taught me the basics that I'd rely on for everything after. I tested whether the agent answered correctly, and when it didn't, I refined the prompt or the source information until the answer was what the client wanted. I also learned how to review a call and turn what I heard into a concrete improvement.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/polyai/imgs/agentstudio_faq.webp" class="img-fluid rounded pa-shot" alt="An FAQ topic in Agent Studio with sample questions and the response content the agent follows" loading="lazy">
+                                <figcaption>An FAQ topic in Agent Studio. Image: <a class="hyperlink" href="https://docs.poly.ai/knowledge/faqs/introduction" target="_blank" rel="noopener">PolyAI</a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 2 -->
+                    <div class="row gx-5 justify-content-evenly mt-5">
+                        <div class="col-lg-12">
+                            <h3>Growing with a key client</h3>
+                            <p>Next I took on an existing project for a long-standing client who was very important to the company. The agent had to keep growing as the client added offices and doctors, each with its own business rules, so I tracked those rules while updating the agent. Two problems stood out on this project.</p>
+                        </div>
+                    </div>
+
+                    <div class="row gx-5 justify-content-evenly align-items-start mt-4">
+                        <div class="col-lg-6 mb-lg-0 mb-5">
+                            <figure class="pa-figure pa-panel">
+                                <p class="emphasized mb-3">IDNV success</p>
+                                <div class="pa-bar-row">
+                                    <span class="pa-bar-label">Start</span>
+                                    <div class="pa-bar-track"><div class="pa-bar-fill pa-bar-start" style="width: 65%;">~65%</div></div>
+                                </div>
+                                <div class="pa-bar-row">
+                                    <span class="pa-bar-label">Later</span>
+                                    <div class="pa-bar-track"><div class="pa-bar-fill pa-bar-later" style="width: 90%;">90%+, and still climbing</div></div>
+                                </div>
+                                <div class="pa-bar-axis"><span>0%</span><span>100%</span></div>
+                                <figcaption>Approximate. Results from this one project.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4>Getting IDNV right</h4>
+                            <div class="pa-note mb-3">
+                                <p><b>IDNV (identify and verify)</b> is how the agent confirms who is calling, and finds their account, before it changes anything on it. It matters on every project where callers change something about their account. This specific struggle and these results are from this one project.</p>
+                            </div>
+                            <p>On this client's project, callers struggled to identify themselves because speech recognition kept mishearing their details. My engineer and I improved IDNV success from roughly 65% to over 90%, and it was still climbing at the end of my time there. The causes were mundane: "Sara" versus "Sarah," background noise, and numbers or IDs that mix letters and numbers, which got harder to capture the more complex they were. No single fix solved it, so we layered several:</p>
+                            <ul class="regular">
+                                <li><b>Biasing:</b> telling the system what answers to expect when we already knew them, instead of accepting anything it heard.</li>
+                                <li><b>Less to collect:</b> asking for less where we could, while still gathering enough for compliance.</li>
+                                <li><b>Retry logic:</b> changing how many attempts a caller got and rewording the retry so it was reassuring, which kept callers from bailing out to a human.</li>
+                                <li><b>Readbacks:</b> confirming details in a way that didn't disrupt the call, so we never looked up the wrong person.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row gx-5 justify-content-evenly align-items-start mt-5">
+                        <div class="col-lg-6">
+                            <h4>Making slot negotiation loose and adaptive</h4>
+                            <p>The second problem was booking. Agreeing on a time is a negotiation: callers go back and forth between this week and next, mornings and afternoons, and change their minds. A rigid flow loses them, so I revised the booking flow to be loose and adaptive, while my engineer improved the booking system behind it.</p>
+                            <p>Together these raised booking success by about 20% on this project, meaning more patients booked by phone with no human involved.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Example: a caller changes their mind</p>
+                                <table class="pa-table">
+                                    <tr><th scope="col">Caller</th><th scope="col">What the agent has to do</th></tr>
+                                    <tr><td>"Next Tuesday morning."</td><td>Offer matching slots</td></tr>
+                                    <tr><td>"Hmm, that's too early."</td><td>Narrow by time of day, keep the day</td></tr>
+                                    <tr><td>"Actually, what about the week after?"</td><td>Jump back without restarting</td></tr>
+                                    <tr><td>"Is Dr. A open sooner than that?"</td><td>Widen the search, then return to booking</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 3 -->
+                    <div class="row gx-5 justify-content-evenly align-items-start mt-5">
+                        <div class="col-lg-6 mb-lg-0 mb-5 order-lg-1 order-2">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">What the agent could handle</p>
+                                <span class="pa-chip">Book</span>
+                                <span class="pa-chip">Reschedule</span>
+                                <span class="pa-chip">Medication refills</span>
+                                <span class="pa-chip">Transportation requests</span>
+                                <span class="pa-chip">Location questions</span>
+                                <span class="pa-chip">English &amp; Spanish</span>
+                                <p class="mt-3 mb-0">Collect more detail up front: find out why the caller is coming in, pick the right appointment type from that, then pull slots for that type.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1">
+                            <h3>Building new agents from scratch</h3>
+                            <p>As my time at PolyAI went on, I started building new agents from the ground up. I built on what earlier projects and internal templates gave me, but shaped each agent's personality and behavior from scratch, taking it from requirements all the way to live callers. One example was an agent for a healthcare client rapidly expanding into new offices, to handle their initial calls. It booked and rescheduled appointments, took medication refill and transportation requests, and answered basic questions about locations.</p>
+                            <p>It was among my most complex builds. There were many more business rules, and the flows needed more information collected and sent to the client's internal system. It also had to be bilingual: the agent used multilingual speech recognition that could pick up English or Spanish, and I prompted it on what to listen for and when to switch, even if the caller never asked.</p>
+                            <p>Booking also needed more detail. Unlike my earlier project, where booking mostly used a general appointment type, the agent had to learn why someone was calling in order to book the right type. The hardest part was designing jump points into every step, because callers change their minds. It launched to live callers, and we kept improving it and adding features through the end of my time there.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After launch and beyond -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Beyond the build</h2>
+                            <p>Launch was never the end. I reviewed calls to find where an agent could improve, fixed bugs, and helped our Deployment Strategists read dashboards and spot patterns, which decided where to focus next. Pods covered each other's projects, so I also had to be able to pick up another agent and keep it healthy.</p>
+                            <p>I also built tools to make my teammates' days easier. Reviewing calls in other languages was a real struggle on multilingual projects, so I built a browser extension that adds translations right into the call review page. A second feature let you type a test message in English and have it translated for the agent in chat. It ran offline, so no sensitive call data was sent anywhere. Coworkers told me it made their daily work much smoother, and it was just one of a few extensions I built.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="sub-light">Tools &amp; methods</h3>
+                            <span class="pa-chip">Agent Studio</span>
+                            <span class="pa-chip">Lucidchart</span>
+                            <span class="pa-chip">Python</span>
+                            <span class="pa-chip">VS Code</span>
+                            <span class="pa-chip">Claude Code</span>
+                            <span class="pa-chip">Wren</span>
+                            <span class="pa-chip">Prompt design</span>
+                            <span class="pa-chip">Call review</span>
+                            <span class="pa-chip">Stakeholder interviews</span>
+                            <span class="pa-chip">User acceptance testing</span>
+                            <span class="pa-chip">Custom dashboards</span>
+                            <p class="mt-3">I started in <a class="hyperlink" href="https://docs.poly.ai/platform/introduction" target="_blank" rel="noopener">Agent Studio</a>, mapped flows in Lucidchart, and wrote agent logic in Python in VS Code. Research was usually informal interviews, to understand who would be calling and what business rules the agent had to fit. Testing mixed manual calls from our team, pre-release testing with the client, and sometimes a trial period on one location so we could review real calls before expanding.</p>
+                            <p>When AI coding tools arrived, I reviewed every change they made and tested the agent by hand afterward. Having written agents by hand first, I knew what the code should do. Later I used Wren, PolyAI's natural-language assistant, to build features alongside clients, falling back to manual code when needed.</p>
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/polyai/imgs/wren_cover.webp" class="img-fluid rounded pa-shot" alt="Wren's chat prompt reading 'What would you like to build?' with a line-drawn bird above it and a sample request to build an agent that verifies customers through voice and SMS" loading="lazy">
+                                <figcaption>Wren, as announced by PolyAI. Image: <a class="hyperlink" href="https://poly.ai/blog/wren-agent-improves-dialog-agents" target="_blank" rel="noopener">PolyAI</a></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection -->
+                <div class="container mt-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg">
+                            <h2>Reflection</h2>
+                            <p>In about a year and a half, I went from maintaining an FAQ-focused agent, to growing a larger client's agent, to building new agents from scratch, including a bilingual healthcare agent. Conversation design suits how I think. I enjoy mapping the expected paths, where a caller could fall off the rails, and how to guide them back. It's fun and hard, because every caller arrives with their own idea of how the call should go. They have an understanding of what the agent should be able to do, and their own goals for the interaction. Designing for that means making room for many expectations at once, instead of just one.</p>
+                            <p>The job also kept changing how I worked. I started in Agent Studio and wrote agent logic by hand in Python, then moved through AI coding tools like Cursor and Claude Code, and later Wren. Each one changed how quickly and carefully I could make changes. I tend to stick with a workflow once it's comfortable, so working through that discomfort was a real lesson. It paid off in my Python, which improved a lot, and in the browser tools I built for my teammates, which started with noticing a point of friction and being willing to build something new.</p>
+                            <p>The feedback I valued most was from teammates who said they didn't have to worry about a project once I had it. It's what I want to be known for: reliable work that I understand from the technical side and the design side. The habit I'm still building is saying what I notice sooner. I often noticed things that were broken or could be better, both in projects and in our internal tooling. I'm learning to share what I notice and what I learn before it's needed, so the whole team benefits earlier.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr/>
+
+            <!-- Footer -->
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="row text-center">
+                        <h2>Let's Connect</h2>
+                        <p>I'm quick to respond, get in touch for opportunities or to say hi!</p>
+                    </div>
+                    <div class="row footer pt-0">
+                        <div class="col d-inline-flex justify-content-center">
+                            <li class="pe-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/swansonux/" target="_blank"><i class="fab fa-linkedin-in" alt="LinkedIn Logo"></i></a>
+                                </div>
+                            </li>
+                            <li class="ps-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="mailto: patswancreations@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email Icon"></i></a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <b>Patrick Swanson | 2026</b>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript for Back to Top Button -->
+        <script src="/Portfolio/js/bttb.js?v=2026-09-23"></script>
+
+        <script src="/Portfolio/js/scroll-effects.js?v=2026-09-23"></script>
+
+    </body>
+</html>

@@ -813,3 +813,78 @@ h5 {font-size: 1.25rem;}
         transition: none;
     }
 }
+
+/* PolyAI case study page */
+.pa-metric {
+    height: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    color: var(--secondary-purple);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.pa-metric h3 { font-size: 1.4rem; color: var(--secondary-purple); }
+.pa-metric p, .pa-metric li { color: var(--secondary-purple); }
+.pa-metric ul { margin-bottom: 0; padding-left: 1.2rem; }
+.pa-metric-1 { background-color: color-mix(in srgb, var(--primary-blue) 35%, white); }
+.pa-metric-2 { background-color: color-mix(in srgb, var(--alternate-orange) 35%, white); }
+
+.pa-chip {
+    display: inline-block;
+    margin: 0 6px 8px 0;
+    padding: .3rem .8rem;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, var(--alternate-lime) 35%, white);
+    color: var(--secondary-purple);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+
+.pa-figure { margin: 0; }
+.pa-figure svg { width: 100%; height: auto; display: block; }
+.pa-figure figcaption { margin-top: 8px; font-size: .85rem; color: var(--grayscale-700); }
+.pa-shot { border: 1px solid var(--grayscale-300); }
+.pa-bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.pa-bar-label { flex: 0 0 3rem; font-size: .9rem; color: var(--secondary-purple); }
+.pa-bar-track { flex: 1; height: 32px; border-radius: 8px; background-color: var(--grayscale-300); }
+.pa-bar-fill { height: 100%; border-radius: 8px; display: flex; align-items: center; padding-left: 10px; font-size: .9rem; font-weight: 700; white-space: nowrap; color: var(--secondary-purple); }
+.pa-bar-start { background-color: var(--alternate-orange); }
+.pa-bar-later { background-color: var(--alternate-green); }
+.pa-bar-axis { display: flex; justify-content: space-between; margin-left: calc(3rem + 12px); font-size: .8rem; color: var(--grayscale-700); }
+@media (max-width: 767.98px) {
+    .pa-scroll-img img { min-width: 680px; max-width: none; }
+}
+.pa-scroll { overflow-x: auto; }
+.pa-scroll svg { min-width: 640px; }
+
+.pa-panel {
+    background-color: var(--grayscale-0);
+    border: 1px solid var(--grayscale-300);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.pa-note {
+    border-left: 4px solid var(--alternate-orange);
+    background-color: color-mix(in srgb, var(--alternate-orange) 20%, white);
+    border-radius: 0 12px 12px 0;
+    padding: 12px 16px;
+    color: var(--secondary-purple);
+}
+.pa-note p { margin-bottom: 0; color: var(--secondary-purple); }
+
+.pa-table { width: 100%; font-size: .95rem; color: var(--grayscale-900); }
+.pa-table th, .pa-table td { padding: 6px 8px; border-bottom: 1px solid var(--grayscale-300); vertical-align: top; }
+.pa-table th { color: var(--grayscale-700); font-weight: 700; }
+
+.pa-script { margin-bottom: 12px; }
+.pa-script:last-child { margin-bottom: 0; }
+.pa-script p { margin-bottom: 0; }
+
+/* SVG text classes */
+.svg-t { font-family: 'Merriweather Sans', sans-serif; fill: var(--secondary-purple); font-size: 15px; }
+.svg-t-sm { font-family: 'Merriweather Sans', sans-serif; fill: var(--secondary-purple); font-size: 12.5px; }
+.svg-t-light { font-family: 'Merriweather Sans', sans-serif; fill: var(--grayscale-100); font-size: 14px; }
+.svg-t-mute { font-family: 'Merriweather Sans', sans-serif; fill: var(--grayscale-700); font-size: 12px; }
+.svg-b { font-weight: 700; }
