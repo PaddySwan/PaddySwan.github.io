@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Thanks for checking out my source code! Everything here is from scratch. I have some sections commented out across the site; that just means they're not ready yet, check back later! -->
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-716F81YX2T"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-716F81YX2T');
+        </script>
+
+        <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/6a976fbeccab399bfa11c043/script.js"></script> <!-- End cookieyes banner -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorting Sorting | Patrick Swanson</title>
+        <meta name="description" content="Sorting Sorting is a sorting algorithm visualizer for Windows that I designed, built, and released on itch.io.">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+        <!-- Bootstrap Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- Portfolio Stylesheet -->
+        <link rel="stylesheet" href="/Portfolio/css/portfolio.css?v=2026-10-26">
+
+
+        <!-- Font Awesome Icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="scroll-progress" aria-hidden="true"></div>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <main>
+            <!-- Navbar -->
+            <div class="container">
+                <div class="row navbar-bg px-3">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <div class="container border-bottom">
+                            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
+                                <span class="navbar-toggler-icon navbar-toggler-icon-light"></span>
+                            </button>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-block d-none">
+                                <img class="d-lg-block d-none home" src="/Portfolio/img/logo/SwansonLogo_Full_v1.png" style="width: 250px;" alt="Origami swan with the name Patrick Swanson next to it">
+                            </a>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-none d-md mx-auto justify-content-center">
+                                <img class="" src="/Portfolio/img/logo/SwansonLogo_Swan250_v2.png" style="width: 75px;" alt="Origami swan">
+                            </a>
+                            <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+                                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/portfolio.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/about-me.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/resume/Swanson_Resume.pdf?v=2026-10-19" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <button
+                    type="button"
+                    class="btn btn-lg"
+                    id="btn-back-to-top"
+                    aria-label="Return to top of page"
+                    >
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+            <!-- Main Body -->
+            <div id="main-content" class="section p-4 mt-3 justify-content-center">
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-6 align-self-center">
+                            <h1 class="light text-center m-1">Sorting Sorting</h1>
+                            <p class="light">A sorting algorithm visualizer for Windows that I designed, built, and released myself.</p>
+                            <a class="cta-btn" href="https://paddyswan.itch.io/sorting-sorting" target="_blank" rel="noopener">Get it on itch.io</a>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <figure class="pa-figure">
+                                <video loop muted playsinline controls preload="none" poster="/Portfolio/sortingsorting/imgs/ss_demo_poster.webp" class="rounded pa-shot" aria-label="Screen recording of Sorting Sorting running a sort: colored bars rearrange while the active bars flash yellow">
+                                    <source src="/Portfolio/sortingsorting/imgs/ss_demo.mp4" type="video/mp4">
+                                </video>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content here -->
+            <div class="p-4 mt-3 justify-content-center">
+
+                <!-- Overview -->
+                <div class="container">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Overview</h2>
+                            <p>Sorting Sorting turns sorting algorithms into something you can watch. Pick a method, from classics like Merge Sort and Quick Sort to oddballs like Bogo Sort and Pancake Sort, set how many bars you want, and see them swap, merge, and shuffle in real time. It times every run, so you can compare how long each algorithm takes.</p>
+                            <p>I wanted it to be useful if you're curious about how algorithms work, and still be fun to watch if you're not. It's free to download, with pay-what-you-want pricing.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="sub-light">Role</h3>
+                            <p><b>Designer and developer</b> <br> Solo: concept, UX, visual design, code, and release. An engineer friend helped with some of the sorting logic.</p>
+                            <h3 class="sub-light">Status</h3>
+                            <p>v1 released October 5, 2025 on <a class="hyperlink" href="https://paddyswan.itch.io/sorting-sorting" target="_blank" rel="noopener">itch.io</a> and still in development.</p>
+                            <h3 class="sub-light">Platform</h3>
+                            <p>Windows download (4.4 MB). Mac and Linux builds are planned.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End to end -->
+                <div class="container mt-5">
+                    <h2>Idea to release to iteration</h2>
+                    <ol class="e2e">
+                        <li><span class="pa-chip">Idea</span></li>
+                        <li><span class="pa-chip">Design</span></li>
+                        <li><span class="pa-chip">Build</span></li>
+                        <li><span class="pa-chip">Release</span></li>
+                        <li><span class="pa-chip">Iterate</span></li>
+                    </ol>
+                    <div class="row g-4 align-items-start">
+                        <div class="col-lg-7">
+                            <p>I was drawn to sorting algorithms when I was starting out and wanted to make fun games and apps. Two goals ended up sharing one project: I wanted to learn Love2D, and I wanted to learn the algorithms themselves, including what they're for and how their logic works. Building a visualizer was a way to do both, because I had to understand each algorithm well enough to show it.</p>
+                            <p>I also wanted to show that engineering doesn't have to be serious all the time. If someone picks this up out of nowhere, I'd like them to learn that there are serious sorting algorithms and funny ones, and that code can be approachable.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Who it's for</p>
+                                <p class="mb-0">Anyone. You don't have to care about algorithms. Maybe you just want to try it, or zone out to colorful bars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: understanding -->
+                <div class="container mt-5">
+                    <h2>Design decisions</h2>
+                    <div class="row gx-5 justify-content-evenly align-items-center mt-4">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <h3>Make each algorithm understandable</h3>
+                            <p>Watching bars move is satisfying, but it doesn't explain anything on its own. So the visualization carries a few cues:</p>
+                            <ul class="regular">
+                                <li><b>Active bars light up in yellow</b>, so you can see which values the algorithm is comparing or swapping right now.</li>
+                                <li><b>Hover any algorithm</b> for a plain-English description. Gnome Sort, for example, is explained as a gnome sorting flower pots.</li>
+                                <li><b>Run history</b> in the corner shows your latest, previous, and earlier timings, so comparing two algorithms doesn't need a stopwatch.</li>
+                                <li><b>Sound is tied to the data:</b> each bar's value maps to a pitch, so a sort has its own sound.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 order-1 mb-4 mb-lg-0">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/sortingsorting/imgs/ss_sorting.webp" width="1280" height="720" class="img-fluid rounded pa-shot" alt="Sorting Sorting mid-sort: colored bars rising from left to right with two yellow bars highlighted, and a history in the top-left listing the latest and previous sort times" loading="lazy">
+                                <figcaption>A sort in progress, with the active bars highlighted and the run history in the corner.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: overload -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/sortingsorting/imgs/ss_overview.webp" width="1280" height="720" class="img-fluid rounded pa-shot" alt="The Sorting Sorting start screen: a side panel listing every algorithm with a size slider and start, reset, auto sort and options controls, next to a field of blue and purple bars" loading="lazy">
+                                <figcaption>The start screen. The panel on the left holds every control.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Plenty of controls without the overload</h3>
+                            <p>The hardest design problem was balance. There are 19 algorithms, a size from 2 to 500 bars, a speed control, auto sort, sound, and color options. Showing all of it at once would bury the one thing people came for: the bars.</p>
+                            <p>So every control lives in a single side panel that can be tucked away, the stats stay as quiet text in the corner, and the bars get the rest of the screen. Less common settings, such as colors, go behind an Options screen instead of competing for attention.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: constraints -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <h3>Limits that guide instead of lock</h3>
+                            <p>Some algorithms can't take just any input. Bitonic Sort only works on powers of two, and Bogo Sort effectively never finishes on a large list. The easy answer is to disable controls. That would have made the app feel rigid and left people wondering why something was greyed out.</p>
+                            <ul class="regular">
+                                <li><b>Bitonic Sort</b> snaps your size to the nearest power of two, with a note explaining why, instead of refusing your input.</li>
+                                <li><b>Bogo Sort</b> suggests five items or fewer, but doesn't stop you from trying more.</li>
+                                <li><b>Random</b> skips those two, so it never picks an algorithm that needs special handling.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/sortingsorting/imgs/ss_bogo.webp" width="1280" height="720" class="img-fluid rounded pa-shot" alt="Sorting Sorting with five large bars in green, blue, purple and red after a Bogo Sort run; the history reads 1 minute 39 seconds for five items" loading="lazy">
+                                <figcaption>Bogo Sort needed 1 minute 39 seconds to sort just five bars.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: humor -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h3>Humor on purpose</h3>
+                            <p>The lineup mixes the practical (Merge, Quick, Heap) with the absurd (Bogo, Stooge, Spaghetti, Sleep). The silly ones aren't filler. Showing how slow Bogo Sort really is teaches why efficient algorithms matter better than a lecture would.</p>
+                            <p>A finished sort ends with a rainbow celebration, and Bogo Sort gets its own tune for pulling it off.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Algorithms</p>
+                                <span class="pa-chip">Bubble</span>
+                                <span class="pa-chip">Selection</span>
+                                <span class="pa-chip">Insertion</span>
+                                <span class="pa-chip">Merge</span>
+                                <span class="pa-chip">Quick</span>
+                                <span class="pa-chip">Heap</span>
+                                <span class="pa-chip">Shell</span>
+                                <span class="pa-chip">Comb</span>
+                                <span class="pa-chip">Cocktail Shaker</span>
+                                <span class="pa-chip">Odd-Even</span>
+                                <span class="pa-chip">Cycle</span>
+                                <span class="pa-chip">Strand</span>
+                                <span class="pa-chip">Bitonic</span>
+                                <span class="pa-chip">Pancake</span>
+                                <span class="pa-chip">Gnome</span>
+                                <span class="pa-chip">Spaghetti</span>
+                                <span class="pa-chip">Stooge</span>
+                                <span class="pa-chip">Sleep</span>
+                                <span class="pa-chip">Bogo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & process -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Build and release</h2>
+                            <p>Sorting Sorting is built in Lua with the Love2D framework. Each algorithm runs step by step so the screen can show every comparison and swap. Adding a new algorithm means adding one file and registering it, which keeps it easy to grow.</p>
+                            <p>I released it on itch.io as pay-what-you-want, since I didn't make it to earn money. I'd rather inspire someone with something simple: coding and learning don't have to be hard, and they can be accessible. The page invites bug reports, feature ideas, and algorithm requests.</p>
+                            <div class="pa-note mt-3">
+                                <p><b>A note on process:</b> I wrote the code myself, with help from an engineer friend on some sorting logic. When I got stuck, I used Claude Code to review logic and make quick, minor changes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <h3 class="sub-light">Tools &amp; methods</h3>
+                            <span class="pa-chip">Love2D</span>
+                            <span class="pa-chip">Lua</span>
+                            <span class="pa-chip">UX design</span>
+                            <span class="pa-chip">Visual design</span>
+                            <span class="pa-chip">Audio feedback</span>
+                            <span class="pa-chip">itch.io release</span>
+                            <span class="pa-chip">Community feedback</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection -->
+                <div class="container mt-5">
+                    <div class="row gx-5 align-items-start">
+                        <div class="col-lg-7">
+                            <h2>Reflection</h2>
+                            <p>To show an algorithm, I had to understand it, so building the visualizer was also how I learned them. The design lesson was restraint. With this many options, the work was deciding what to hide, what to explain, and what to quietly correct for people.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">What's next</p>
+                                <ul class="regular mb-0">
+                                    <li>Mac and Linux builds</li>
+                                    <li>More algorithms</li>
+                                    <li>Fixes and features from player feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a class="cta-btn" href="https://paddyswan.itch.io/sorting-sorting" target="_blank" rel="noopener">Get it on itch.io</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr/>
+
+            <!-- Footer -->
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="row text-center">
+                        <h2>Let's Connect</h2>
+                        <p>I'm quick to respond, get in touch for opportunities or to say hi!</p>
+                    </div>
+                    <div class="row footer pt-0">
+                        <div class="col d-inline-flex justify-content-center">
+                            <li class="pe-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/swansonux/" target="_blank"><i class="fab fa-linkedin-in" alt="LinkedIn Logo"></i></a>
+                                </div>
+                            </li>
+                            <li class="ps-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="mailto: patswancreations@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email Icon"></i></a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <b>Patrick Swanson | 2026</b>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript for Back to Top Button -->
+        <script src="/Portfolio/js/bttb.js?v=2026-09-23"></script>
+
+        <script src="/Portfolio/js/scroll-effects.js?v=2026-09-23"></script>
+
+    </body>
+</html>

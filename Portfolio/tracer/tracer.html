@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Thanks for checking out my source code! Everything here is from scratch. I have some sections commented out across the site; that just means they're not ready yet, check back later! -->
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-716F81YX2T"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-716F81YX2T');
+        </script>
+
+        <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/6a976fbeccab399bfa11c043/script.js"></script> <!-- End cookieyes banner -->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tracer | Patrick Swanson</title>
+        <meta name="description" content="Tracer is a daily maze speed game I designed and built end to end: six mazes, one clock, and a shareable trail glyph.">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+
+        <!-- Bootstrap Stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- Portfolio Stylesheet -->
+        <link rel="stylesheet" href="/Portfolio/css/portfolio.css?v=2026-10-26">
+
+
+        <!-- Font Awesome Icons-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="scroll-progress" aria-hidden="true"></div>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <main>
+            <!-- Navbar -->
+            <div class="container">
+                <div class="row navbar-bg px-3">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <div class="container border-bottom">
+                            <button class="navbar-toggler navbar-toggler-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar">
+                                <span class="navbar-toggler-icon navbar-toggler-icon-light"></span>
+                            </button>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-block d-none">
+                                <img class="d-lg-block d-none home" src="/Portfolio/img/logo/SwansonLogo_Full_v1.png" style="width: 250px;" alt="Origami swan with the name Patrick Swanson next to it">
+                            </a>
+                            <a href="/portfolio.html" class="navbar-brand d-flex w-50 me-auto d-lg-none d-md mx-auto justify-content-center">
+                                <img class="" src="/Portfolio/img/logo/SwansonLogo_Swan250_v2.png" style="width: 75px;" alt="Origami swan">
+                            </a>
+                            <div class="navbar-collapse collapse w-100" id="collapsingNavbar">
+                                <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/portfolio.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/about-me.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/projects.html">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-nav rounded mx-1" href="/Portfolio/resume/Swanson_Resume.pdf?v=2026-10-19" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <button
+                    type="button"
+                    class="btn btn-lg"
+                    id="btn-back-to-top"
+                    aria-label="Return to top of page"
+                    >
+                <i class="fas fa-arrow-up"></i>
+            </button>
+
+            <!-- Main Body -->
+            <div id="main-content" class="section p-4 mt-3 justify-content-center">
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-lg-6 align-self-center">
+                            <h1 class="light text-center m-1">Tracer</h1>
+                            <p class="light">A daily maze speed game I designed and built from idea to launch. Six mazes, one clock.</p>
+                            <a class="cta-btn" href="https://tracer.swansonux.com/" target="_blank" rel="noopener">Play today's Tracer</a>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <img src="/Portfolio/tracer/imgs/tracer_brand.webp" width="800" height="420" class="img-fluid rounded pa-dark-shot" style="max-width: min(100%, 520px);" alt="The Tracer logo in white script above a row of six colored dots: red, orange, yellow, green, blue and purple">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content here -->
+            <div class="p-4 mt-3 justify-content-center">
+
+                <!-- Overview -->
+                <div class="container">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Overview</h2>
+                            <p>I love daily games, puzzles, and mazes. Tracer is my answer to "what if a daily game felt as good to play as the ones I keep coming back to?" Everyone gets the same six mazes each day, you race through them on one running clock, and every maze leaves a glowing trail behind you. The look is inspired by Flow Free's neon-on-dark line art.</p>
+                            <p>It's also my first true game. I designed it, wrote the code, playtested it with friends, launched it, and have kept improving it since. It's live and free to play, with a new puzzle every day.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="sub-light">Role</h3>
+                            <p><b>Designer and developer</b> <br> Solo: concept, spec, UX, visual design, code, launch, and upkeep</p>
+                            <h3 class="sub-light">Status</h3>
+                            <p>Live at <a class="hyperlink" href="https://tracer.swansonux.com/" target="_blank" rel="noopener">tracer.swansonux.com</a>. A new puzzle every day, 55 numbered revisions so far.</p>
+                            <h3 class="sub-light">Platform</h3>
+                            <p>Any modern browser, on desktop or phone. No install, no account.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End to end -->
+                <div class="container mt-5">
+                    <h2>Idea to launch to iteration</h2>
+                    <ol class="e2e">
+                        <li><span class="pa-chip">Idea</span></li>
+                        <li><span class="pa-chip">One-page spec</span></li>
+                        <li><span class="pa-chip">Design</span></li>
+                        <li><span class="pa-chip">Build</span></li>
+                        <li><span class="pa-chip">Playtest</span></li>
+                        <li><span class="pa-chip">Launch</span></li>
+                        <li><span class="pa-chip">Iterate</span></li>
+                    </ol>
+                    <div class="row g-4 align-items-start">
+                        <div class="col-lg-7">
+                            <p>Before writing any game code, I wrote a one-page spec. It named the experience I wanted, <b>fast, clean, skill-based, satisfying, and shareable</b>, and it listed what V1 would <i>not</i> do: no enemies, no power-ups, no multiplayer, no leaderboard. A new player should understand the game within five seconds, so anything that didn't serve that got cut or pushed to a "later" list.</p>
+                            <p>Then I shipped a small version and let it change from there. The spec grew from a plan into a changelog.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">Design pillars</p>
+                                <span class="pa-chip">Fast</span>
+                                <span class="pa-chip">Clean</span>
+                                <span class="pa-chip">Skill-based</span>
+                                <span class="pa-chip">Satisfying</span>
+                                <span class="pa-chip">Shareable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: movement -->
+                <div class="container mt-5">
+                    <h2>Design decisions</h2>
+                    <div class="row gx-5 justify-content-evenly align-items-center mt-4">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <h3>Movement that never gets in the way</h3>
+                            <p>Tracer is a speed game, so the controls have to keep up with you. The movement needed to feel smooth and satisfying, and it could never slow down a player who is racing. That took a lot of trial and error, with friends playtesting along the way.</p>
+                            <p>Where I landed:</p>
+                            <ul class="regular">
+                                <li><b>One tap moves exactly one cell,</b> so tight turns stay precise.</li>
+                                <li><b>Holding a key starts a fast repeat</b> after a short delay, for long corridors.</li>
+                                <li><b>Moves animate smoothly</b> from cell to cell instead of snapping.</li>
+                                <li><b>Arrow keys, WASD, or click and drag</b> all work, including on a phone.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/tracer/imgs/tracer_gameplay.webp" width="450" height="482" class="img-fluid rounded pa-shot pa-dark-shot" style="max-width: min(100%, 450px);" alt="Tracer mid-run on maze 6 of 6: a purple trail that fades toward its start winds from the top-left corner toward a star in the bottom-right" loading="lazy">
+                                <figcaption>Mid-run. The trail fades behind you, so your newest moves stay bright.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: one run -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly align-items-start">
+                        <div class="col-lg-6">
+                            <h3>One shot a day, plus a place to warm up</h3>
+                            <p>In the spirit of a daily game, you get one shot: one run a day, and one final time to show for it. Early versions let you retry as often as you liked, so they tracked your best time across attempts. Once retries went away, that was no longer needed.</p>
+                            <p>Still, as someone who plays a lot of daily games, I know the feeling of liking one and wanting more. So I added <b>Practice</b>: endless mazes, no clock pressure, so you can get a feel for the controls before you commit to today's run.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Six mazes, easy to hard</h3>
+                            <p>The spec said five mazes. I moved to six for a cleaner 3×2 recap grid, and because it gave players more to play: the mazes grow from 7×7 to 12×12, so the run ramps from easy to hard. It still lands at around a minute or two for an average player.</p>
+                            <p>Mazes are generated from the date, so everyone gets the same puzzle. A quality check throws out layouts that are too short, so each one feels curated rather than random.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: trails and sharing -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly align-items-center">
+                        <div class="col-lg-7 mb-4 mb-lg-0">
+                            <figure class="pa-figure">
+                                <img src="/Portfolio/tracer/imgs/tracer_results.webp" width="600" height="485" class="img-fluid rounded pa-shot pa-dark-shot" alt="Tracer's results screen: a combined glyph of all six trails beside a 3 by 2 grid of the six mazes, each with its own colored trail and split time" loading="lazy">
+                                <figcaption>The results screen: the six mazes as a recap grid, plus the run's glyph on the left. (Demo run.)</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-5">
+                            <h3>Turning a run into something you can share</h3>
+                            <p>Each maze gets its own trail color, so a finished run is a small piece of art. The recap shows all six trails, and the <b>glyph</b> overlays them into one abstract image that's different for every player and every day.</p>
+                            <p>You can copy the glyph as a square image, or copy a text result with a colored dot for each maze. The goal was a result worth posting, not just a number.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decision: accessibility + extras -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly align-items-start">
+                        <div class="col-lg-6">
+                            <h3>Sound that tells you where you are</h3>
+                            <p>Sound is part of the base game. Every move makes a small tick, and its pitch climbs as you get closer to the goal, so you get a sense of your progress without looking. That came out of a conversation during development about whether someone who can't see the maze could still enjoy the game.</p>
+                            <p><b>Blind Mode</b> is an optional challenge built on that cue. The maze disappears and your marker is hidden, so all you have is sound: whether you're moving, and whether you're getting closer to or further from the end. It's a fun challenge, and it can be played by ear if you have a visual impairment.</p>
+                            <p>Its sibling, <b>Dark Mode</b>, gives you a flashlight view of the maze with a randomized exit. Both live in Settings and are limited to Practice, so the daily run stays the same for everyone.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>A few small extras</h3>
+                            <ul class="regular">
+                                <li><b>Sound effects</b> for moves, cleared mazes, and finished runs. They're off by default, with a volume control.</li>
+                                <li><b>Holiday themes</b> that swap trail colors and wall colors on eight holidays.</li>
+                                <li><b>A history calendar</b> showing every day you've played, colored by speed.</li>
+                                <li><b>A global reset at midnight UTC,</b> with your local reset time shown on the landing screen.</li>
+                                <li><b>A couple of easter eggs</b> that started as jokes between friends. I'll leave those for you to find.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & process -->
+                <div class="container mt-5">
+                    <div class="row gx-5 justify-content-evenly">
+                        <div class="col-lg-6">
+                            <h2>Build and process</h2>
+                            <p>Tracer is plain HTML, CSS, and JavaScript, drawn on a canvas with sound from the Web Audio API. There are no frameworks or dependencies, and the fonts are self-hosted, so it loads fast. Each system lives in its own file: maze generation, rendering, input, game state, and sound.</p>
+                            <p>Every shipped change gets a revision number and a line in the changelog, the same way I'd track a product release.</p>
+                            <div class="pa-note mt-3">
+                                <p><b>A note on process:</b> I wrote the code myself. When I got stuck, I used Claude Code to review logic and make quick, minor changes.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <h3 class="sub-light">Tools &amp; methods</h3>
+                            <span class="pa-chip">HTML</span>
+                            <span class="pa-chip">CSS</span>
+                            <span class="pa-chip">JavaScript</span>
+                            <span class="pa-chip">Canvas API</span>
+                            <span class="pa-chip">Web Audio API</span>
+                            <span class="pa-chip">Product spec</span>
+                            <span class="pa-chip">Playtesting with friends</span>
+                            <span class="pa-chip">Seeded generation</span>
+                            <span class="pa-chip">Accessibility</span>
+                            <span class="pa-chip">Changelog &amp; revisions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reflection -->
+                <div class="container mt-5">
+                    <div class="row gx-5 align-items-start">
+                        <div class="col-lg-7">
+                            <h2>Reflection</h2>
+                            <p>Tracer taught me that feel is a design problem, not a polish step. The first versions worked on paper, but only playing them, and watching friends play them, showed where movement slowed people down. I also learned that constraints can be the feature: one run a day and a shared puzzle are what make the game a ritual.</p>
+                            <p>Designing the movement sound cue was a reminder to ask early who a design leaves out, while it's still cheap to change.</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="pa-panel">
+                                <p class="emphasized mb-2">On my list</p>
+                                <ul class="regular mb-0">
+                                    <li>A colorblind-friendly trail palette</li>
+                                    <li>A reduced-motion option</li>
+                                    <li>Streaks and personal stats</li>
+                                    <li>Offline play</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a class="cta-btn" href="https://tracer.swansonux.com/" target="_blank" rel="noopener">Play today's Tracer</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr/>
+
+            <!-- Footer -->
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="row text-center">
+                        <h2>Let's Connect</h2>
+                        <p>I'm quick to respond, get in touch for opportunities or to say hi!</p>
+                    </div>
+                    <div class="row footer pt-0">
+                        <div class="col d-inline-flex justify-content-center">
+                            <li class="pe-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="https://www.linkedin.com/in/swansonux/" target="_blank"><i class="fab fa-linkedin-in" alt="LinkedIn Logo"></i></a>
+                                </div>
+                            </li>
+                            <li class="ps-2">
+                                <div class="social-icons">
+                                    <a class="social-icon" href="mailto: patswancreations@gmail.com" target="_blank"><i class="fa-solid fa-envelope" alt="Email Icon"></i></a>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <b>Patrick Swanson | 2026</b>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <!-- JavaScript for Back to Top Button -->
+        <script src="/Portfolio/js/bttb.js?v=2026-09-23"></script>
+
+        <script src="/Portfolio/js/scroll-effects.js?v=2026-09-23"></script>
+
+    </body>
+</html>
